@@ -4,8 +4,9 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use App\Models\;
 use App\Models\Article;
-use App\Models\AuthorCategory;
+use App\Models\User;
 
 class ArticleFactory extends Factory
 {
@@ -24,13 +25,13 @@ class ArticleFactory extends Factory
         return [
             'title' => $this->faker->sentence(4),
             'content' => $this->faker->paragraphs(3, true),
-            'author_id' => $this->faker->word(),
-            'category_id' => $this->faker->word(),
+            'author_id' => $this->faker->randomNumber(),
+            'category_id' => ::factory(),
             'status' => $this->faker->word(),
             'featured_image' => $this->faker->word(),
             'published_at' => $this->faker->dateTime(),
             'deleted_at' => $this->faker->word(),
-            'author_category_id' => AuthorCategory::factory(),
+            'user_id' => User::factory(),
         ];
     }
 }

@@ -6,12 +6,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use PharIo\Manifest\Author;
 
 class Article extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'title',
         'content',
@@ -20,18 +24,25 @@ class Article extends Model
         'status',
         'featured_image',
         'published_at',
-        'author_category_id',
+        'user_id',
     ];
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
     protected $casts = [
         'id' => 'integer',
+        'author_id' => 'integer',
+        'category_id' => 'integer',
         'published_at' => 'timestamp',
-        'author_category_id' => 'integer',
+        'user_id' => 'integer',
     ];
 
-    public function author(): BelongsTo
+    public function user(): BelongsTo
     {
-        return $this->belongsTo(Author::class);
+        return $this->belongsTo(User::class);
     }
 
     public function category(): BelongsTo

@@ -1,50 +1,20 @@
 created:
-    - app/Http/Controllers/ArticleController.php
-    - app/Http/Controllers/CategoryController.php
-    - app/Http/Controllers/TagController.php
-    - app/Http/Controllers/CommentController.php
     - database/factories/ArticleFactory.php
     - database/factories/CategoryFactory.php
     - database/factories/TagFactory.php
     - database/factories/CommentFactory.php
-    - database/migrations/2024_10_10_062421_create_articles_table.php
-    - database/migrations/2024_10_10_062422_create_categories_table.php
-    - database/migrations/2024_10_10_062423_create_tags_table.php
-    - database/migrations/2024_10_10_062424_create_comments_table.php
-    - database/migrations/2024_10_10_062425_create_article_tag_table.php
+    - database/migrations/2024_10_10_071206_create_articles_table.php
+    - database/migrations/2024_10_10_071207_create_categories_table.php
+    - database/migrations/2024_10_10_071208_create_tags_table.php
+    - database/migrations/2024_10_10_071209_create_comments_table.php
+    - database/migrations/2024_10_10_071210_create_article_tag_table.php
     - app/Models/Article.php
     - app/Models/Category.php
     - app/Models/Tag.php
     - app/Models/Comment.php
-    - tests/Feature/Http/Controllers/ArticleControllerTest.php
-    - tests/Feature/Http/Controllers/CategoryControllerTest.php
-    - tests/Feature/Http/Controllers/TagControllerTest.php
-    - tests/Feature/Http/Controllers/CommentControllerTest.php
-    - app/Http/Requests/ArticleStoreRequest.php
-    - app/Http/Requests/ArticleUpdateRequest.php
-    - app/Http/Requests/CategoryStoreRequest.php
-    - app/Http/Requests/CategoryUpdateRequest.php
-    - app/Http/Requests/TagStoreRequest.php
-    - app/Http/Requests/TagUpdateRequest.php
-    - app/Http/Requests/CommentStoreRequest.php
-    - app/Http/Requests/CommentUpdateRequest.php
-    - resources/views/articles/index.blade.php
-    - resources/views/articles/create.blade.php
-    - resources/views/articles/edit.blade.php
-    - resources/views/categories/index.blade.php
-    - resources/views/categories/create.blade.php
-    - resources/views/categories/edit.blade.php
-    - resources/views/tags/index.blade.php
-    - resources/views/tags/create.blade.php
-    - resources/views/tags/edit.blade.php
-    - resources/views/comments/index.blade.php
-    - resources/views/comments/create.blade.php
-    - resources/views/comments/edit.blade.php
-updated:
-    - routes/web.php
 models:
     User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable' }
-    Article: { title: string, content: text, author_id: 'foreignId:user', category_id: 'foreignId:category', status: string, featured_image: 'string nullable', published_at: 'timestamp nullable', deleted_at: softDeletes, timestamps: timestamps, relationships: { belongsTo: 'author category', belongsToMany: Tag } }
-    Category: { name: 'string unique', slug: 'string unique', timestamps: timestamps, relationships: { hasMany: Article } }
-    Tag: { name: 'string unique', slug: 'string unique', timestamps: timestamps, relationships: { belongsToMany: Article } }
-    Comment: { article_id: 'foreignId:article', user_id: 'foreignId:user nullable', content: text, status: string, timestamps: timestamps, relationships: { belongsTo: 'article user' } }
+    Article: { title: string, content: text, author_id: 'unsignedInteger nullable', category_id: 'unsignedInteger nullable', status: string, featured_image: 'string nullable', published_at: 'timestamp nullable', deleted_at: softDeletes, timestamps: timestamps, relationships: { belongsTo: 'User, Category', belongsToMany: Tag } }
+    Category: { name: 'string unique', timestamps: timestamps, relationships: { hasMany: Article } }
+    Tag: { name: 'string unique', timestamps: timestamps, relationships: { belongsToMany: Article } }
+    Comment: { article_id: 'unsignedInteger nullable', user_id: 'unsignedInteger nullable', content: text, status: string, timestamps: timestamps, relationships: { belongsTo: 'Article, User' } }

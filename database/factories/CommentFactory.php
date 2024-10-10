@@ -4,7 +4,8 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use App\Models\ArticleUser;
+use App\Models\;
+use App\Models\Article;
 use App\Models\Comment;
 
 class CommentFactory extends Factory
@@ -22,11 +23,10 @@ class CommentFactory extends Factory
     public function definition(): array
     {
         return [
-            'article_id' => $this->faker->word(),
-            'user_id' => $this->faker->word(),
+            'article_id' => Article::factory(),
+            'user_id' => ::factory(),
             'content' => $this->faker->paragraphs(3, true),
             'status' => $this->faker->word(),
-            'article_user_id' => ArticleUser::factory(),
         ];
     }
 }
