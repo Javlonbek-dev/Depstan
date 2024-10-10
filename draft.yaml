@@ -1,0 +1,133 @@
+models:
+  Article:
+    title: string
+    content: text
+    author_id: foreignId:user
+    category_id: foreignId:category
+    status: string
+    featured_image: string nullable
+    published_at: timestamp nullable
+    deleted_at: softDeletes
+    timestamps: true
+    relationships:
+      belongsTo:
+        - author
+        - category
+      belongsToMany:
+        - Tag
+
+  Category:
+    name: string unique
+    slug: string unique
+    timestamps: true
+    relationships:
+      hasMany:
+        - Article
+
+  Tag:
+    name: string unique
+    slug: string unique
+    timestamps: true
+    relationships:
+      belongsToMany:
+        - Article
+
+  Comment:
+    article_id: foreignId:article
+    user_id: foreignId:user nullable
+    content: text
+    status: string
+    timestamps: true
+    relationships:
+      belongsTo:
+        - article
+        - user
+
+controllers:
+  Article:
+    index:
+      query: all
+      render: articles.index
+    create:
+      render: articles.create
+    store:
+      validate: title, content, author_id, category_id, status, featured_image, published_at
+      save: article
+      redirect: articles.index
+    edit:
+      find: id
+      render: articles.edit
+    update:
+      validate: title, content, author_id, category_id, status, featured_image, published_at
+      save: article
+      redirect: articles.index
+    destroy:
+      find: id
+      delete: article
+      redirect: articles.index
+
+  Category:
+    index:
+      query: all
+      render: categories.index
+    create:
+      render: categories.create
+    store:
+      validate: name, slug
+      save: category
+      redirect: categories.index
+    edit:
+      find: id
+      render: categories.edit
+    update:
+      validate: name, slug
+      save: category
+      redirect: categories.index
+    destroy:
+      find: id
+      delete: category
+      redirect: categories.index
+
+  Tag:
+    index:
+      query: all
+      render: tags.index
+    create:
+      render: tags.create
+    store:
+      validate: name, slug
+      save: tag
+      redirect: tags.index
+    edit:
+      find: id
+      render: tags.edit
+    update:
+      validate: name, slug
+      save: tag
+      redirect: tags.index
+    destroy:
+      find: id
+      delete: tag
+      redirect: tags.index
+
+  Comment:
+    index:
+      query: all
+      render: comments.index
+    create:
+      render: comments.create
+    store:
+      validate: article_id, user_id, content, status
+      save: comment
+      redirect: comments.index
+    edit:
+      find: id
+      render: comments.edit
+    update:
+      validate: article_id, user_id, content, status
+      save: comment
+      redirect: comments.index
+    destroy:
+      find: id
+      delete: comment
+      redirect: comments.index
