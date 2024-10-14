@@ -1,35 +1,91 @@
 models:
-  Article:
+  Advertisement:
+    name: string
+    file: string
+    published_at: date
+
+  Analytical:
     title: string
-    content: text
-    author_id: unsignedInteger nullable
-    category_id: unsignedInteger nullable
-    status: string
-    featured_image: string nullable
-    published_at: timestamp nullable
-    deleted_at: softDeletes
-    timestamps: true
-    relationships:
-      belongsTo: User, Category
-      belongsToMany: Tag
+    published_at: date
+    image: json
+    text: longtext
 
-  Category:
-    name: string unique
-    timestamps: true
-    relationships:
-      hasMany: Article
+  StateBudget:
+    name: string
+    file: string
 
-  Tag:
-    name: string unique
-    timestamps: true
-    relationships:
-      belongsToMany: Article
+  Presentations:
+    name: string
+    file: string
 
-  Comment:
-    article_id: unsignedInteger nullable
-    user_id: unsignedInteger nullable
-    content: text
-    status: string
-    timestamps: true
-    relationships:
-      belongsTo: Article, User
+  Corruption:
+    name: string
+    file: string
+
+  AcceptApplication:
+    image: string
+    text: longtext
+    manager_name: string
+    employ_phone: string
+    reception_name: string
+    reception_phone: string
+    control_name: string
+    control_phone: string
+
+  OpenData:
+    name: string
+    file: string
+
+  Vacancy:
+    name: string
+    organ: string
+    published_at: date
+    branch: string
+    salary: string
+    specialty: string
+    experience: string
+    employment: string
+    information: string
+    gender: string
+
+  YouthPolicy:
+    title: string
+    content: longtext
+    published_at: date
+
+  Leadership:
+    position: string
+    full_name: string
+    phone: string
+    birth_date: string
+    info: string
+    work_activity: json
+    family_info: string
+    reception_days: string
+
+  News:
+    title: string
+    images: json
+    file: string
+    published_at: date
+
+  ApprovalFile:
+    name: string
+    file: string
+
+  NormativeDoc:
+    title: string
+    link: string
+    date: date
+    number: string
+
+  PhotoGallery:
+    title: string
+    images: json
+    published_at: date
+
+  VideoGallery:
+    content: string
+    link: string
+    published_at: date
+

@@ -1,20 +1,63 @@
 created:
-    - database/factories/ArticleFactory.php
-    - database/factories/CategoryFactory.php
-    - database/factories/TagFactory.php
-    - database/factories/CommentFactory.php
-    - database/migrations/2024_10_10_071206_create_articles_table.php
-    - database/migrations/2024_10_10_071207_create_categories_table.php
-    - database/migrations/2024_10_10_071208_create_tags_table.php
-    - database/migrations/2024_10_10_071209_create_comments_table.php
-    - database/migrations/2024_10_10_071210_create_article_tag_table.php
-    - app/Models/Article.php
-    - app/Models/Category.php
-    - app/Models/Tag.php
-    - app/Models/Comment.php
+    - database/factories/AdvertisementFactory.php
+    - database/factories/AnalyticalFactory.php
+    - database/factories/StateBudgetFactory.php
+    - database/factories/PresentationsFactory.php
+    - database/factories/CorruptionFactory.php
+    - database/factories/AcceptApplicationFactory.php
+    - database/factories/OpenDataFactory.php
+    - database/factories/VacancyFactory.php
+    - database/factories/YouthPolicyFactory.php
+    - database/factories/LeadershipFactory.php
+    - database/factories/NewsFactory.php
+    - database/factories/ApprovalFileFactory.php
+    - database/factories/NormativeDocFactory.php
+    - database/factories/PhotoGalleryFactory.php
+    - database/factories/VideoGalleryFactory.php
+    - database/migrations/2024_10_14_060829_create_advertisements_table.php
+    - database/migrations/2024_10_14_060830_create_analyticals_table.php
+    - database/migrations/2024_10_14_060831_create_state_budgets_table.php
+    - database/migrations/2024_10_14_060832_create_presentations_table.php
+    - database/migrations/2024_10_14_060833_create_corruptions_table.php
+    - database/migrations/2024_10_14_060834_create_accept_applications_table.php
+    - database/migrations/2024_10_14_060835_create_open_data_table.php
+    - database/migrations/2024_10_14_060836_create_vacancies_table.php
+    - database/migrations/2024_10_14_060837_create_youth_policies_table.php
+    - database/migrations/2024_10_14_060838_create_leaderships_table.php
+    - database/migrations/2024_10_14_060839_create_news_table.php
+    - database/migrations/2024_10_14_060840_create_approval_files_table.php
+    - database/migrations/2024_10_14_060841_create_normative_docs_table.php
+    - database/migrations/2024_10_14_060842_create_photo_galleries_table.php
+    - database/migrations/2024_10_14_060843_create_video_galleries_table.php
+    - app/Models/Advertisement.php
+    - app/Models/Analytical.php
+    - app/Models/StateBudget.php
+    - app/Models/Presentations.php
+    - app/Models/Corruption.php
+    - app/Models/AcceptApplication.php
+    - app/Models/OpenData.php
+    - app/Models/Vacancy.php
+    - app/Models/YouthPolicy.php
+    - app/Models/Leadership.php
+    - app/Models/News.php
+    - app/Models/ApprovalFile.php
+    - app/Models/NormativeDoc.php
+    - app/Models/PhotoGallery.php
+    - app/Models/VideoGallery.php
 models:
-    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable' }
-    Article: { title: string, content: text, author_id: 'unsignedInteger nullable', category_id: 'unsignedInteger nullable', status: string, featured_image: 'string nullable', published_at: 'timestamp nullable', deleted_at: softDeletes, timestamps: timestamps, relationships: { belongsTo: 'User, Category', belongsToMany: Tag } }
-    Category: { name: 'string unique', timestamps: timestamps, relationships: { hasMany: Article } }
-    Tag: { name: 'string unique', timestamps: timestamps, relationships: { belongsToMany: Article } }
-    Comment: { article_id: 'unsignedInteger nullable', user_id: 'unsignedInteger nullable', content: text, status: string, timestamps: timestamps, relationships: { belongsTo: 'Article, User' } }
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable', password: string, role: "string default:'USER'::character varying", remember_token: 'string:100 nullable' }
+    Advertisement: { name: string, file: string, published_at: date }
+    Analytical: { title: string, published_at: date, image: json, text: longtext }
+    StateBudget: { name: string, file: string }
+    Presentations: { name: string, file: string }
+    Corruption: { name: string, file: string }
+    AcceptApplication: { image: string, text: longtext, manager_name: string, employ_phone: string, reception_name: string, reception_phone: string, control_name: string, control_phone: string }
+    OpenData: { name: string, file: string }
+    Vacancy: { name: string, organ: string, published_at: date, branch: string, salary: string, specialty: string, experience: string, employment: string, information: string, gender: string }
+    YouthPolicy: { title: string, content: longtext, published_at: date }
+    Leadership: { position: string, full_name: string, phone: string, birth_date: string, info: string, work_activity: json, family_info: string, reception_days: string }
+    News: { title: string, images: json, file: string, published_at: date }
+    ApprovalFile: { name: string, file: string }
+    NormativeDoc: { title: string, link: string, date: date, number: string }
+    PhotoGallery: { title: string, images: json, published_at: date }
+    VideoGallery: { content: string, link: string, published_at: date }
