@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Bosh sahifa &#8212;TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
+    @vite([     'resources/css/wp-content/css/e-swiper.min.css',
+                'resources/css/wp-content/css/font-icons.min.css',
+                'resources/css/wp-content/css/global.css',
+                'resources/css/wp-content/css/mobile.min.css',
+                'resources/css/wp-content/css/elementor-icons.min.css',
+                'resources/css/wp-content/css/navigation-branding.min.css',
+                'resources/css/wp-content/css/post-12.css',
+                'resources/css/wp-content/css/post-41.css',
+                'resources/css/wp-content/css/style.min.css',
+                'resources/css/wp-content/css/style-min.css',
+                'resources/css/wp-content/css/frontend.min.css',
+                'resources/css/wp-content/css/post-40.css',
+                'resources/css/wp-content/css/unsemantic-grid.min.css',
+                'resources/css/wp-content/css/widget-google_maps.min.css',
+                'resources/css/wp-content/css/widget-heading.min.css',
+                'resources/css/wp-content/css/widget-image-box.min.css',
+                'resources/css/wp-content/css/eael.min.css',
+                'resources/css/wp-content/css/eael-post-2.min.css',
+                'resources/css/wp-content/css/eael-post-36.min.css',
+                'resources/css/wp-content/css/elementor-icons.min.css',
+                //js
+                  'resources/js/js/jquery/jquery.min.js',
+                'resources/js/js/jquery/jquery-migrate.min.js',
+                ])
     <meta name='robots' content='max-image-preview:large'/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='dns-prefetch' href='//blacksaltys.com'/>
     <link href='https://fonts.gstatic.com' crossorigin rel='preconnect'/>
     <link href='https://fonts.googleapis.com' crossorigin rel='preconnect'/>
-    <link rel="alternate" type="application/rss+xml" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI &raquo; Лента" href="https://depstan.uz/feed/"/>
-    <link rel="alternate" type="application/rss+xml" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI &raquo; Лента комментариев" href="https://depstan.uz/comments/feed/"/>
-    <link rel="alternate" type="application/rss+xml" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI &raquo; Лента комментариев к &laquo;Bosh sahifa&raquo;" href="https://depstan.uz/bosh-sahifa/feed/"/>
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
@@ -21,7 +42,6 @@
                 "concatemoji": "https:\/\/depstan.uz\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"
             }
         };
-        /*! This file is auto-generated */
         !function(i, n) {
             var o, s, e;
             function c(e) {
@@ -276,10 +296,6 @@
             font-size: 1.5em;
             line-height: 1.6;
         }
-    </style>
-    <link rel='stylesheet' id='generate-style-grid-css' href="{{ asset('css/unsemantic-grid.min.css') }}" media='all'/>
-    <link rel='stylesheet' id='generate-style-css' href='https://depstan.uz/wp-content/themes/generatepress/assets/css/style.min.css?ver=3.4.0' media='all'/>
-    <style id='generate-style-inline-css'>
 
 
         @media (max-width: 768px) {
@@ -801,20 +817,6 @@
             background-color: #1e73be
         }
     </style>
-    <link rel='stylesheet' id='generate-mobile-style-css' href='https://depstan.uz/wp-content/themes/generatepress/assets/css/mobile.min.css?ver=3.4.0' media='all'/>
-    <link rel='stylesheet' id='generate-font-icons-css' href='https://depstan.uz/wp-content/themes/generatepress/assets/css/components/font-icons.min.css?ver=3.4.0' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-css' href='https://depstan.uz/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.31.0' media='all'/>
-    <link rel='stylesheet' id='elementor-frontend-css' href='https://depstan.uz/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.24.6' media='all'/>
-    <link rel='stylesheet' id='swiper-css' href='https://depstan.uz/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all'/>
-    <link rel='stylesheet' id='e-swiper-css' href='https://depstan.uz/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.24.6' media='all'/>
-    <link rel='stylesheet' id='elementor-post-12-css' href='https://depstan.uz/wp-content/uploads/elementor/css/post-12.css?ver=1726169044' media='all'/>
-    <link rel='stylesheet' id='elementor-global-css' href='https://depstan.uz/wp-content/uploads/elementor/css/global.css?ver=1726169045' media='all'/>
-    <link rel='stylesheet' id='widget-heading-css' href='https://depstan.uz/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.24.6' media='all'/>
-    <link rel='stylesheet' id='widget-image-box-css' href='https://depstan.uz/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=3.24.6' media='all'/>
-    <link rel='stylesheet' id='widget-google_maps-css' href='https://depstan.uz/wp-content/plugins/elementor/assets/css/widget-google_maps.min.css?ver=3.24.6' media='all'/>
-    <link rel='stylesheet' id='elementor-post-40-css' href='https://depstan.uz/wp-content/uploads/elementor/css/post-40.css?ver=1726204271' media='all'/>
-    <link rel='stylesheet' id='generate-blog-css' href='https://depstan.uz/wp-content/plugins/gp-premium/blog/functions/css/style-min.css?ver=1.9.1' media='all'/>
-    <link rel='stylesheet' id='generate-navigation-branding-css' href='https://depstan.uz/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding.min.css?ver=1.9.1' media='all'/>
     <style id='generate-navigation-branding-inline-css'>
         @media (max-width: 768px) {
             .site-header, #site-navigation, #sticky-navigation {
@@ -884,18 +886,7 @@
     </style>
     <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=cyrillic&#038;ver=6.6.2' media='all'/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <script src="https://depstan.uz/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="https://depstan.uz/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
     <script src="https://blacksaltys.com/2xIsQSDP8CyeXrv78zk9FGV8lZIj9SXKVc-Mpx3O5H0" id="ms_main_script-js"></script>
-    <link rel="https://api.w.org/" href="https://depstan.uz/wp-json/"/>
-    <link rel="alternate" title="JSON" type="application/json" href="https://depstan.uz/wp-json/wp/v2/pages/40"/>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://depstan.uz/xmlrpc.php?rsd"/>
-    <meta name="generator" content="WordPress 6.6.2"/>
-    <link rel="canonical" href="https://depstan.uz/bosh-sahifa/"/>
-    <link rel='shortlink' href='https://depstan.uz/?p=40'/>
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://depstan.uz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdepstan.uz%2Fbosh-sahifa%2F"/>
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://depstan.uz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdepstan.uz%2Fbosh-sahifa%2F&#038;format=xml"/>
-    <link rel="pingback" href="https://depstan.uz/xmlrpc.php">
     <meta name="generator" content="Elementor 3.24.6; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
     <style>
         .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -959,13 +950,13 @@
     <div class="inside-header grid-container grid-parent">
         <div class="site-branding-container">
             <div class="site-logo">
-                <a href="https://depstan.uz/" rel="home">
-                    <img class="header-image is-logo-image" alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI" src="https://depstan.uz/wp-content/uploads/2020/04/LOGO.svg"/>
+                <a href="{{route('index')}}" rel="home">
+                    <img class="header-image is-logo-image" alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYSI" src="{{ Vite::asset('resources/images/LOGO.svg') }}"/>
                 </a>
             </div>
             <div class="site-branding">
                 <p class="main-title" itemprop="headline">
-                    <a href="https://depstan.uz/" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</a>
+                    <a href="{{route('index')}}" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</a>
                 </p>
             </div>
         </div>
@@ -973,12 +964,12 @@
 </header>
 <nav id="mobile-header" data-auto-hide-sticky="true" class="main-navigation mobile-header-navigation has-branding has-sticky-branding" itemtype="https://schema.org/SiteNavigationElement" itemscope>
     <div class="inside-navigation grid-container grid-parent">
-        <form method="get" class="search-form navigation-search" action="https://depstan.uz/">
+        <form method="get" class="search-form navigation-search" action="{{route('index')}}">
             <input type="search" class="search-field" value="" name="s" title="Поиск"/>
         </form>
         <div class="site-logo mobile-header-logo">
-            <a href="https://depstan.uz/" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI" rel="home">
-                <img src="http://depstan.uz/wp-content/uploads/2020/04/LOGO.svg" alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"/>
+            <a href="{{route('index')}}" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI" rel="home">
+                <img src="{{ Vite::asset('resources/images/LOGO.svg') }}" alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"/>
             </a>
         </div>
         <div class="mobile-bar-items">
@@ -986,157 +977,11 @@
                         <a aria-label="Открыть строку поиска" href="#"></a>
                     </span>
         </div>
-        <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="mobile-menu">Меню</span>
-        </button>
-        <div id="mobile-menu" class="main-nav">
-            <ul id="menu-bosh-menyu-3" class=" menu sf-menu">
-                <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-40 current_page_item menu-item-79">
-                    <a href="https://depstan.uz/bosh-sahifa/" aria-current="page">Bosh sahifa</a>
-                </li>
-                <li id="menu-item-521" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-521">
-                    <a href="https://depstan.uz/departament-haqida/">
-                        Inspeksiya haqida<span role="presentation" class="dropdown-menu-toggle"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-571">
-                            <a href="https://depstan.uz/departament-haqida/umumiy-ma%ca%bclumot/">Umumiy maʼlumot</a>
-                        </li>
-                        <li id="menu-item-570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570">
-                            <a href="https://depstan.uz/departament-haqida/rahbariyat/">Rahbariyat</a>
-                        </li>
-                        <li id="menu-item-569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-569">
-                            <a href="https://depstan.uz/departament-haqida/hududiy-bo%ca%bblinmalar/">Hududiy boʻlinmalar</a>
-                        </li>
-                        <li id="menu-item-568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-568">
-                            <a href="https://depstan.uz/departament-haqida/tashkiliy-tuzilma/">Tashkiliy tuzilma</a>
-                        </li>
-                        <li id="menu-item-567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567">
-                            <a href="https://depstan.uz/departament-haqida/yuqori-turuvchi-organ/">Yuqori turuvchi organ</a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu-item-600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-600">
-                    <a href="https://depstan.uz/hujjatlar/">
-                        Hujjatlar<span role="presentation" class="dropdown-menu-toggle"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-3426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3426">
-                            <a href="https://depstan.uz/maqullash-hujjatlari/">Ma`qullash hujjatlari</a>
-                        </li>
-                        <li id="menu-item-653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-653">
-                            <a href="https://depstan.uz/hujjatlar/o%ca%bbzbekiston-respublikasi-qonunlari/">Oʻzbekiston Respublikasi Qonunlari</a>
-                        </li>
-                        <li id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652">
-                            <a href="https://depstan.uz/hujjatlar/prezidentining-farmon-va-qarorlari/">Prezidentining farmon va qarorlari</a>
-                        </li>
-                        <li id="menu-item-651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651">
-                            <a href="https://depstan.uz/hujjatlar/vazirlar-mahkamasi-qaror-va-farmoyishlari/">Vazirlar Mahkamasi qaror va farmoyishlari</a>
-                        </li>
-                        <li id="menu-item-650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650">
-                            <a href="https://depstan.uz/hujjatlar/boshqa-meyoriy-huquqiy-hujjatlar/">Boshqa me &#8217;yoriy-huquqiy hujjatlar</a>
-                        </li>
-                        <li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649">
-                            <a href="https://depstan.uz/hujjatlar/kuchini-yoqotgan-meyoriy-hujjatlar/">Kuchini yo`qotgan meyoriy hujjatlar</a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu-item-693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-693">
-                    <a href="https://depstan.uz/axborot-xizmati/">
-                        Axborot xizmati<span role="presentation" class="dropdown-menu-toggle"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-757">
-                            <a href="https://depstan.uz/axborot-xizmati/press-reliz/">Press-reliz</a>
-                        </li>
-                        <li id="menu-item-756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756">
-                            <a href="https://depstan.uz/axborot-xizmati/oav-vakillarini-akkreditatsiya-qilish/">OAV vakillarini akkreditatsiya qilish</a>
-                        </li>
-                        <li id="menu-item-755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-755">
-                            <a href="https://depstan.uz/axborot-xizmati/foto-galereya/">Foto galereya</a>
-                        </li>
-                        <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                            <a href="https://depstan.uz/axborot-xizmati/video-galereya/">Video galereya</a>
-                        </li>
-                        <li id="menu-item-761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761">
-                            <a href="https://depstan.uz/axborot-xizmati/nashrlar/">Nashrlar</a>
-                        </li>
-                        <li id="menu-item-754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754">
-                            <a href="https://depstan.uz/axborot-xizmati/elonlar-va-tenderlar/">E &#8217;lonlar va tenderlar</a>
-                        </li>
-                        <li id="menu-item-752" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-752">
-                            <a href="https://depstan.uz/category/tahliliy-malumotlar/">Tahliliy ma &#8217;lumotlar</a>
-                        </li>
-                        <li id="menu-item-1400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1400">
-                            <a href="https://depstan.uz/davlat-byudjetining-ijrosi/">Davlat byudjetining ijrosi</a>
-                        </li>
-                        <li id="menu-item-1719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1719">
-                            <a href="https://depstan.uz/prezentaczii/">Taqdimotlar</a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-766">
-                    <a href="https://depstan.uz/faoliyat/">
-                        Faoliyat<span role="presentation" class="dropdown-menu-toggle"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-786">
-                            <a href="https://depstan.uz/faoliyat/davlat-nazorati-bo%ca%bbyicha/">Davlat nazorati boʻyicha</a>
-                        </li>
-                        <li id="menu-item-2734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2734">
-                            <a href="https://depstan.uz/antikorrupsiya/">Antikorrupsiya</a>
-                        </li>
-                        <li id="menu-item-2759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2759">
-                            <a href="https://depstan.uz/murojaatlarni-qabul-qilish/">Murojaatlarni qabul qilish</a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu-item-883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-883">
-                    <a href="https://depstan.uz/xizmatlar/">
-                        Xizmatlar<span role="presentation" class="dropdown-menu-toggle"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li id="menu-item-887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-887">
-                            <a href="https://depstan.uz/xizmatlar/ochiq-ma%ca%bclumotlar/">Ochiq maʼlumotlar</a>
-                        </li>
-                        <li id="menu-item-885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-885">
-                            <a href="https://depstan.uz/xizmatlar/eksport-qiluvchiga-yordam/">Eksport qiluvchiga yordam</a>
-                        </li>
-                        <li id="menu-item-884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-884">
-                            <a href="https://depstan.uz/xizmatlar/istemolchiga-yordam/">Iste &#8217;molchiga yordam</a>
-                        </li>
-                        <li id="menu-item-886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-886">
-                            <a href="https://depstan.uz/xizmatlar/fuqarolar-murojaatlari/">Fuqarolar murojaatlari</a>
-                        </li>
-                        <li id="menu-item-888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-888">
-                            <a href="https://depstan.uz/xizmatlar/shikoyat-va-arizalar/">Shikoyat va arizalar</a>
-                        </li>
-                        <li id="menu-item-889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-889">
-                            <a href="https://depstan.uz/xizmatlar/interaktiv-xizmatlar/">Interaktiv xizmatlar</a>
-                        </li>
-                    </ul>
-                </li>
-                <li id="menu-item-1323" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1323">
-                    <a href="https://depstan.uz/category/bosh-ish-orinlari/">Bo &#8217;sh ish o &#8217;rinlari</a>
-                </li>
-                <li id="menu-item-1106" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1106">
-                    <a href="https://depstan.uz/category/yoshlar-siyosati/">Yoshlar siyosati</a>
-                </li>
-                <li id="menu-item-3424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3424">
-                    <a href="https://depstan.uz/maqullash-hujjatlari/">Ma`qullash hujjatlari</a>
-                </li>
-                <li class="search-item menu-item-align-right">
-                    <a aria-label="Открыть строку поиска" href="#"></a>
-                </li>
-            </ul>
-        </div>
     </div>
-    <!-- .inside-navigation -->
 </nav>
-<!-- #site-navigation -->
 <nav class="main-navigation sub-menu-right" id="site-navigation" aria-label="Основной" itemtype="https://schema.org/SiteNavigationElement" itemscope>
     <div class="inside-navigation grid-container grid-parent">
-        <form method="get" class="search-form navigation-search" action="https://depstan.uz/">
+        <form method="get" class="search-form navigation-search" action="{{route('index')}}">
             <input type="search" class="search-field" value="" name="s" title="Поиск"/>
         </form>
         <div class="mobile-bar-items">
@@ -1144,147 +989,138 @@
                         <a aria-label="Открыть строку поиска" href="#"></a>
                     </span>
         </div>
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-            <span class="mobile-menu">Меню</span>
-        </button>
         <div id="primary-menu" class="main-nav">
             <ul id="menu-bosh-menyu-4" class=" menu sf-menu">
                 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-40 current_page_item menu-item-79">
-                    <a href="https://depstan.uz/bosh-sahifa/" aria-current="page">Bosh sahifa</a>
+                    <a href="{{route('index')}}" aria-current="page">Bosh sahifa</a>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-521">
-                    <a href="https://depstan.uz/departament-haqida/">
+                    <a href="{{route('index')}}">
                         Inspeksiya haqida<span role="presentation" class="dropdown-menu-toggle"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-571">
-                            <a href="https://depstan.uz/departament-haqida/umumiy-ma%ca%bclumot/">Umumiy maʼlumot</a>
+                            <a href="{{route('general_information')}}">Umumiy maʼlumot</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570">
-                            <a href="https://depstan.uz/departament-haqida/rahbariyat/">Rahbariyat</a>
+                            <a href="{{route('management')}}">Rahbariyat</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-569">
-                            <a href="https://depstan.uz/departament-haqida/hududiy-bo%ca%bblinmalar/">Hududiy boʻlinmalar</a>
+                            <a href="{{route('regional_department')}}">Hududiy boʻlinmalar</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-568">
-                            <a href="https://depstan.uz/departament-haqida/tashkiliy-tuzilma/">Tashkiliy tuzilma</a>
+                            <a href="{{route('structure')}}">Tashkiliy tuzilma</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567">
-                            <a href="https://depstan.uz/departament-haqida/yuqori-turuvchi-organ/">Yuqori turuvchi organ</a>
+                            <a href="{{route('higher_authority')}}">Yuqori turuvchi organ</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-600">
-                    <a href="https://depstan.uz/hujjatlar/">
+                    <a href="{{route('index')}}">
                         Hujjatlar<span role="presentation" class="dropdown-menu-toggle"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3426">
-                            <a href="https://depstan.uz/maqullash-hujjatlari/">Ma`qullash hujjatlari</a>
+                            <a href="{{route('approval_files')}}">Ma`qullash hujjatlari</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-653">
-                            <a href="https://depstan.uz/hujjatlar/o%ca%bbzbekiston-respublikasi-qonunlari/">Oʻzbekiston Respublikasi Qonunlari</a>
+                            <a href="{{route('laws')}}">Oʻzbekiston Respublikasi Qonunlari</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652">
-                            <a href="https://depstan.uz/hujjatlar/prezidentining-farmon-va-qarorlari/">Prezidentining farmon va qarorlari</a>
+                            <a href="{{route('decrees')}}">Prezidentining farmon va qarorlari</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651">
-                            <a href="https://depstan.uz/hujjatlar/vazirlar-mahkamasi-qaror-va-farmoyishlari/">Vazirlar Mahkamasi qaror va farmoyishlari</a>
+                            <a href="{{route('minister_law')}}">Vazirlar Mahkamasi qaror va farmoyishlari</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650">
-                            <a href="https://depstan.uz/hujjatlar/boshqa-meyoriy-huquqiy-hujjatlar/">Boshqa me &#8217;yoriy-huquqiy hujjatlar</a>
+                            <a href="{{route('standard_documents')}}">Boshqa me &#8217;yoriy-huquqiy hujjatlar</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649">
-                            <a href="https://depstan.uz/hujjatlar/kuchini-yoqotgan-meyoriy-hujjatlar/">Kuchini yo`qotgan meyoriy hujjatlar</a>
+                            <a href="{{route('weak_norm_documents')}}">Kuchini yo`qotgan meyoriy hujjatlar</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-693">
-                    <a href="https://depstan.uz/axborot-xizmati/">
+                    <a href="{{route('index')}}">
                         Axborot xizmati<span role="presentation" class="dropdown-menu-toggle"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-757">
-                            <a href="https://depstan.uz/axborot-xizmati/press-reliz/">Press-reliz</a>
+                            <a href="{{route('press_release')}}">Press-reliz</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756">
-                            <a href="https://depstan.uz/axborot-xizmati/oav-vakillarini-akkreditatsiya-qilish/">OAV vakillarini akkreditatsiya qilish</a>
+                            <a href="{{route('media_representatives')}}">OAV vakillarini akkreditatsiya qilish</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-755">
-                            <a href="https://depstan.uz/axborot-xizmati/foto-galereya/">Foto galereya</a>
+                            <a href="{{route('photo_gallery')}}">Foto galereya</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758">
-                            <a href="https://depstan.uz/axborot-xizmati/video-galereya/">Video galereya</a>
+                            <a href="{{route('video_gallery')}}">Video galereya</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761">
-                            <a href="https://depstan.uz/axborot-xizmati/nashrlar/">Nashrlar</a>
+                            <a href="{{route('publications')}}">Nashrlar</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754">
-                            <a href="https://depstan.uz/axborot-xizmati/elonlar-va-tenderlar/">E &#8217;lonlar va tenderlar</a>
+                            <a href="{{route('ads_tenders')}}">E &#8217;lonlar va tenderlar</a>
                         </li>
                         <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-752">
-                            <a href="https://depstan.uz/category/tahliliy-malumotlar/">Tahliliy ma &#8217;lumotlar</a>
+                            <a href="{{route('analytical_data')}}">Tahliliy ma &#8217;lumotlar</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1400">
-                            <a href="https://depstan.uz/davlat-byudjetining-ijrosi/">Davlat byudjetining ijrosi</a>
+                            <a href="{{route('state_budget')}}">Davlat byudjetining ijrosi</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1719">
-                            <a href="https://depstan.uz/prezentaczii/">Taqdimotlar</a>
+                            <a href="{{route('presentations')}}">Taqdimotlar</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-766">
-                    <a href="https://depstan.uz/faoliyat/">
+                    <a href="{{route('index')}}">
                         Faoliyat<span role="presentation" class="dropdown-menu-toggle"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-786">
-                            <a href="https://depstan.uz/faoliyat/davlat-nazorati-bo%ca%bbyicha/">Davlat nazorati boʻyicha</a>
+                            <a href="{{route('state_control')}}">Davlat nazorati boʻyicha</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2734">
-                            <a href="https://depstan.uz/antikorrupsiya/">Antikorrupsiya</a>
+                            <a href="{{route('corruption')}}">Antikorrupsiya</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2759">
-                            <a href="https://depstan.uz/murojaatlarni-qabul-qilish/">Murojaatlarni qabul qilish</a>
+                            <a href="{{route('application_accept')}}">Murojaatlarni qabul qilish</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-883">
-                    <a href="https://depstan.uz/xizmatlar/">
+                    <a href="{{route('index')}}">
                         Xizmatlar<span role="presentation" class="dropdown-menu-toggle"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-887">
-                            <a href="https://depstan.uz/xizmatlar/ochiq-ma%ca%bclumotlar/">Ochiq maʼlumotlar</a>
+                            <a href="{{route('open_data')}}">Ochiq maʼlumotlar</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-885">
-                            <a href="https://depstan.uz/xizmatlar/eksport-qiluvchiga-yordam/">Eksport qiluvchiga yordam</a>
+                            <a href="{{route('export_help')}}">Eksport qiluvchiga yordam</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-884">
-                            <a href="https://depstan.uz/xizmatlar/istemolchiga-yordam/">Iste &#8217;molchiga yordam</a>
+                            <a href="{{route('consumption_help')}}">Iste &#8217;molchiga yordam</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-886">
-                            <a href="https://depstan.uz/xizmatlar/fuqarolar-murojaatlari/">Fuqarolar murojaatlari</a>
+                            <a href="{{route('citizens')}}">Fuqarolar murojaatlari</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-888">
-                            <a href="https://depstan.uz/xizmatlar/shikoyat-va-arizalar/">Shikoyat va arizalar</a>
+                            <a href="{{route('complaint_application')}}">Shikoyat va arizalar</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-889">
-                            <a href="https://depstan.uz/xizmatlar/interaktiv-xizmatlar/">Interaktiv xizmatlar</a>
+                            <a href="{{route('interactive_services')}}">Interaktiv xizmatlar</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1323">
-                    <a href="https://depstan.uz/category/bosh-ish-orinlari/">Bo &#8217;sh ish o &#8217;rinlari</a>
+                    <a href="{{route('vacancy')}}">Bo &#8217;sh ish o &#8217;rinlari</a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1106">
-                    <a href="https://depstan.uz/category/yoshlar-siyosati/">Yoshlar siyosati</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3424">
-                    <a href="https://depstan.uz/maqullash-hujjatlari/">Ma`qullash hujjatlari</a>
-                </li>
-                <li class="search-item menu-item-align-right">
-                    <a aria-label="Открыть строку поиска" href="#"></a>
+                    <a href="{{route('young')}}">Yoshlar siyosati</a>
                 </li>
             </ul>
         </div>
