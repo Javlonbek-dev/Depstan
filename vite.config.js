@@ -27,6 +27,8 @@ export default defineConfig({
                 'resources/css/wp-content/css/eael-post-2.min.css',
                 'resources/css/wp-content/css/eael-post-36.min.css',
                 'resources/css/wp-content/css/elementor-icons.min.css',
+                'resources/css/wp-content/css/widget-text-editor.min.css',
+                'resources/css/wp-content/css/post-192.css',
 
                 //js
                 'resources/js/assets/core.min.js',
@@ -35,7 +37,9 @@ export default defineConfig({
                 'resources/js/assets/menu.min.js',
                 'resources/js/assets/navigation-search.min.js',
                 'resources/js/assets/sticky.min.js',
+                'resources/js/assets/classList.min.js',
                 'resources/js/assets/webpack.runtime.min.js',
+                'resources/js/assets/pageviews.min.js',
             ],
             refresh: true,
         }),
