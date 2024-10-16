@@ -27,6 +27,8 @@ export default defineConfig({
                 'resources/css/wp-content/css/eael-post-2.min.css',
                 'resources/css/wp-content/css/eael-post-36.min.css',
                 'resources/css/wp-content/css/elementor-icons.min.css',
+                'resources/css/wp-content/css/widget-text-editor.min.css',
+                'resources/css/wp-content/css/post-192.css',
 
                 //js
                 'resources/js/assets/core.min.js',
