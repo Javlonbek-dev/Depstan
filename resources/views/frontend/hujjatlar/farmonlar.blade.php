@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0064)https://depstan.uz/hujjatlar/prezidentining-farmon-va-qarorlari/ -->
 <html lang="ru-RU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
+
 	<title>Prezidentining farmon va qarorlari — TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 <meta name="robots" content="max-image-preview:large">
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="dns-prefetch" href="https://blacksaltys.com/">
@@ -9,12 +9,6 @@
 <link href="https://fonts.googleapis.com/" crossorigin="" rel="preconnect">
 <link rel="alternate" type="application/rss+xml" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI » Лента" href="https://depstan.uz/feed/">
 <link rel="alternate" type="application/rss+xml" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI » Лента комментариев" href="https://depstan.uz/comments/feed/">
-<script type="text/javascript" async="" src="./Prezidentining farmon va qarorlari_files/pageviews.min.js"></script><script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/depstan.uz\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
-<link rel="stylesheet" id="generate-fonts-css" href="./Prezidentining farmon va qarorlari_files/css" media="all">
 <style id="wp-emoji-styles-inline-css">
 
 	img.wp-smiley, img.emoji {
@@ -125,8 +119,8 @@ body{background-color:#efefef;color:#3a3a3a;}a{color:#1e73be;}a:hover, a:focus, 
 						<p class="main-title" itemprop="headline">
 					<a href="https://depstan.uz/" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</a>
 				</p>
-						
-					</div></div>			</div>
+
+                    </div></div>			</div>
 		</header>
 				<nav id="mobile-header" data-auto-hide-sticky="true" class="main-navigation mobile-header-navigation has-branding has-sticky-branding stuckElement" itemtype="https://schema.org/SiteNavigationElement" itemscope="" style="z-index: 100;">
 			<div class="inside-navigation grid-container grid-parent">
@@ -336,21 +330,21 @@ body{background-color:#efefef;color:#3a3a3a;}a{color:#1e73be;}a:hover, a:focus, 
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3424"><a href="https://depstan.uz/maqullash-hujjatlari/">Ma`qullash hujjatlari</a></li>
 <li class="search-item menu-item-align-right"><a aria-label="Открыть строку поиска" href="https://depstan.uz/hujjatlar/prezidentining-farmon-va-qarorlari/#"></a></li></ul></div>			</div>
 		</nav>
-		
-	<div class="site grid-container container hfeed grid-parent" id="page">
+
+    <div class="site grid-container container hfeed grid-parent" id="page">
 				<div class="site-content" id="content">
-			
-	<div class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75" id="primary">
+
+                    <div class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75" id="primary">
 		<main class="site-main" id="main">
-			
-<article id="post-623" class="post-623 page type-page status-publish" itemtype="https://schema.org/CreativeWork" itemscope="">
+
+            <article id="post-623" class="post-623 page type-page status-publish" itemtype="https://schema.org/CreativeWork" itemscope="">
 	<div class="inside-article">
-		
-			<header class="entry-header">
+
+        <header class="entry-header">
 				<h1 class="entry-title" itemprop="headline">Prezidentining farmon va qarorlari</h1>			</header>
 
-			
-		<div class="entry-content" itemprop="text">
+
+        <div class="entry-content" itemprop="text">
 					<div data-elementor-type="wp-page" data-elementor-id="623" class="elementor elementor-623">
 						<section class="elementor-section elementor-top-section elementor-element elementor-element-c12221f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c12221f" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
@@ -364,22 +358,22 @@ body{background-color:#efefef;color:#3a3a3a;}a{color:#1e73be;}a:hover, a:focus, 
 				<a href="https://lex.uz/docs/4476578" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/4476578">
 							Oʻzbekiston Respublikasida muvofiqlikni baholash tizimini yana-da takomillashtirish va sinov laboratoriyalari kompleksini rivojlantirish toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 15.08.2019
 
 Raqami: PQ-4419					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-40fa7229 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="40fa7229" data-element_type="widget" data-widget_type="icon-box.default">
@@ -390,22 +384,22 @@ Raqami: PQ-4419					</p>
 				<a href="https://lex.uz/ru/docs/4157892" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/ru/docs/4157892">
 							Oʻzbekiston Respublikasi Prezidenti huzuridagi Loyiha boshqaruvi milliy agentligi faoliyatini yana-da takomillashtirish chora-tadbirlari toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 10.01.2019
 
 Raqami: PF-5624					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-15ca6731 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="15ca6731" data-element_type="widget" data-widget_type="icon-box.default">
@@ -416,22 +410,22 @@ Raqami: PF-5624					</p>
 				<a href="https://lex.uz/pdfs/4102205" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/pdfs/4102205">
 							Texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya tizimlarini yana-da rivojlantirish chora-tadbirlari toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 12.12.2018
 
 Raqami: PQ-4059					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-37308c36 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="37308c36" data-element_type="widget" data-widget_type="icon-box.default">
@@ -442,22 +436,22 @@ Raqami: PQ-4059					</p>
 				<a href="https://lex.uz/docs/3728051" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/3728051">
 							Oʻzbekiston Respublikasi Bosh prokuraturasi huzuridagi Agrosanoat majmui va oziq-ovqat xavfsizligi taʼminlanishi ustidan nazorat qilish inspeksiyasi faoliyatini tashkil etish chora-tadbirlari toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 07.05.2018
 
 Raqami: PQ-3699					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-57d182c7 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="57d182c7" data-element_type="widget" data-widget_type="icon-box.default">
@@ -468,22 +462,22 @@ Raqami: PQ-3699					</p>
 				<a href="https://lex.uz/ru/docs/3603202" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/ru/docs/3603202">
 							Muvofiqlikni baholash organlarini akkreditatsiya qilish tizimini yana-da takomillashtirish chora-tadbirlari toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 30.03.2018
 
 Raqami: PQ-3643					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-29cbf96f elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="29cbf96f" data-element_type="widget" data-widget_type="icon-box.default">
@@ -494,20 +488,20 @@ Raqami: PQ-3643					</p>
 				<a href="https://lex.uz/docs/3191024" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/3191024">
 							Oʻzbekiston standartlashtirish, metrologiya va sertifikatlashtirish agentligi faoliyatini takomillashtirish chora-tadbirlari toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 28.04.2017 Raqami: PQ-2935					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-31119368 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="31119368" data-element_type="widget" data-widget_type="icon-box.default">
@@ -518,22 +512,22 @@ Raqami: PQ-3643					</p>
 				<a href="https://lex.uz/docs/3039311" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/3039311">
 							Tadbirkorlik faoliyatining jadal rivojlanishini taʼminlashga, xususiy mulkni har tomonlama himoya qilishga va ishbilarmonlik muhitini sifat jihatidan yaxshilashga doir qoʻshimcha chora-tadbirlar toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 05.10.2016
 
 Raqami: PF-4848-son					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-2df99ee0 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2df99ee0" data-element_type="widget" data-widget_type="icon-box.default">
@@ -544,22 +538,22 @@ Raqami: PF-4848-son					</p>
 				<a href="https://www.lex.uz/docs/2924702" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://www.lex.uz/docs/2924702">
 							Xalqaro shartnomani tasdiqlash toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 15.04.2016
 
 Raqami: PQ 2514 - son					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-5acae658 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="5acae658" data-element_type="widget" data-widget_type="icon-box.default">
@@ -570,22 +564,22 @@ Raqami: PQ 2514 - son					</p>
 				<a href="https://www.lex.uz/docs/2370473" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://www.lex.uz/docs/2370473">
 							Tadbirkorlik faoliyatini amalga oshirish va davlat xizmatlarini koʻrsatish bilan bogʻliq tartibotlarni yana-da takomillashtirish chora-tadbirlari toʻgʻrisida						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 15.04.2014
 
 Raqami: PQ-2164 - son					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-6f77e708 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="6f77e708" data-element_type="widget" data-widget_type="icon-box.default">
@@ -596,22 +590,22 @@ Raqami: PQ-2164 - son					</p>
 				<a href="https://lex.uz/docs/2033432" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/2033432">
 							Oʻzbekiston Respublikasi Prezidentining “Statistik, soliq, moliyaviy hisobotlarni, litsenziyalanadigan faoliyat turlarini va ruxsat berish tartib-taomillarini tubdan qisqartirish chora-tadbirlari toʻgʻrisida” Farmoni						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 16.07.2012
 
 Raqami: № PF-4453					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-2a7015ad elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2a7015ad" data-element_type="widget" data-widget_type="icon-box.default">
@@ -622,22 +616,22 @@ Raqami: № PF-4453					</p>
 				<a href="https://lex.uz/docs/1988186" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/1988186">
 							Oʻzbekiston Respublikasi Prezidentining “Eksport qiluvchi korxonalarni ragʻbatlantirishni kuchaytirish va raqobatbardosh mahsulotlarni eksportga yetkazib berishni kengaytirish borasida qoʻshimcha chora-tadbirlar toʻgʻrisida”gi Qarori						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 26.03.2012
 
 Raqami: № PQ-1731					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-56d16493 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="56d16493" data-element_type="widget" data-widget_type="icon-box.default">
@@ -648,22 +642,22 @@ Raqami: № PQ-1731					</p>
 				<a href="https://lex.uz/docs/858962" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/858962">
 							Oʻzbekiston Respublikasi Prezidentining “Tadbirkorlik sebyektlarini tekshirishni yana-da qisqartirish va uning tizimini takomillashtirish chora-tadbirlari toʻgʻrisida”gi Farmoni						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 05.10.2005
 
 Raqami: № PF-3665					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-49f71e25 elementor-view-stacked elementor-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="49f71e25" data-element_type="widget" data-widget_type="icon-box.default">
@@ -674,22 +668,22 @@ Raqami: № PF-3665					</p>
 				<a href="https://lex.uz/docs/613354" class="elementor-icon elementor-animation-" tabindex="-1">
 				<i aria-hidden="true" class="fas fa-file-alt"></i>				</a>
 			</div>
-			
-						<div class="elementor-icon-box-content">
+
+                        <div class="elementor-icon-box-content">
 
 									<h3 class="elementor-icon-box-title">
 						<a href="https://lex.uz/docs/613354">
 							Oʻzbekiston Respublikasi Prezidentining “Tadbirkorlik subyektlarini huquqiy himoya qilish tizimini yana-da takomillashtirish chora-tadbirlari toʻgʻrisida”gi Farmoni						</a>
 					</h3>
-				
-									<p class="elementor-icon-box-description">
+
+                            <p class="elementor-icon-box-description">
 						Sana: 14.06.2005
 
 Raqami: № PF-3619					</p>
-				
-			</div>
-			
-		</div>
+
+                        </div>
+
+                    </div>
 				</div>
 				</div>
 					</div>
@@ -697,7 +691,13 @@ Raqami: № PF-3619					</p>
 					</div>
 		</section>
 				</div>
-		<div class="pageviews-wrapper"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1792 1792"><path d="M588.277,896v692.375H280.555V896H588.277z M1049.86,630.363v958.012h-307.72V630.363H1049.86z M1511.446,203.625v1384.75h-307.725V203.625H1511.446z"></path></svg><span class="pageviews-placeholder" data-key="623"></span></div>		</div>
+            <div class="pageviews-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1792 1792">
+                    <path
+                        d="M588.277,896v692.375H280.555V896H588.277z M1049.86,630.363v958.012h-307.72V630.363H1049.86z M1511.446,203.625v1384.75h-307.725V203.625H1511.446z"></path>
+                </svg>
+                <span class="pageviews-placeholder" data-key="623"></span></div>
+        </div>
 
 			</div>
 </article>
@@ -706,8 +706,8 @@ Raqami: № PF-3619					</p>
 
 	<div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
 	<div class="inside-right-sidebar">
-		
-		<aside id="recent-posts-2" class="widget inner-padding widget_recent_entries">
+
+    <aside id="recent-posts-2" class="widget inner-padding widget_recent_entries">
 		<h2 class="widget-title">Сўнгги янгиликлар</h2>
 		<ul>
 											<li>
