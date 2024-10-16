@@ -1060,15 +1060,15 @@
     <div class="inside-header grid-container grid-parent">
         <div class="site-branding-container">
             <div class="site-logo">
-                <a href="https://depstan.uz/" rel="home">
+                <a href="{{route('index')}}" rel="home">
                     <img class="header-image is-logo-image"
                          alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"
-                         src="https://depstan.uz/wp-content/uploads/2020/04/LOGO.svg"/>
+                         src="{{ Vite::asset('resources/images/LOGO.svg') }}">
                 </a>
             </div>
             <div class="site-branding">
                 <p class="main-title" itemprop="headline">
-                    <a href="https://depstan.uz/" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT
+                    <a href="{{route('index')}}" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT
                         INSPEKSIYASI</a>
                 </p>
 

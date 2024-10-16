@@ -29,6 +29,10 @@ export default defineConfig({
                 'resources/css/wp-content/css/elementor-icons.min.css',
                 'resources/css/wp-content/css/widget-text-editor.min.css',
                 'resources/css/wp-content/css/post-192.css',
+                'resources/css/wp-content/css/widget-icon-box.min.css',
+                'resources/css/wp-content/css/post-617.css',
+                'resources/css/wp-content/css/solid.min.css',
+                'resources/css/wp-content/css/fontawesome.min.css',
 
                 //js
                 'resources/js/assets/core.min.js',
