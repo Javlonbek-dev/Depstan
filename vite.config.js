@@ -29,9 +29,13 @@ export default defineConfig({
                 'resources/css/wp-content/css/elementor-icons.min.css',
 
                 //js
-                'resources/js/js/jquery/jquery.min.js',
-                'resources/js/js/jquery/jquery-migrate.min.js',
-                'resources/js/js/jquery/',
+                'resources/js/assets/core.min.js',
+                'resources/js/assets/frontend.min.js',
+                'resources/js/assets/frontend-modules.min.js',
+                'resources/js/assets/menu.min.js',
+                'resources/js/assets/navigation-search.min.js',
+                'resources/js/assets/sticky.min.js',
+                'resources/js/assets/webpack.runtime.min.js',
             ],
             refresh: true,
         }),

@@ -8,14 +8,14 @@
 	if ( typeof define === "function" && define.amd ) {
 
 		// AMD. Register as an anonymous module.
-		define( [ "jquery" ], function( jQuery ) {
+		define( [ "resources/js/jquery/jquery.js" ], function(jQuery ) {
 			return factory( jQuery, window );
 		} );
 	} else if ( typeof module === "object" && module.exports ) {
 
 		// Node/CommonJS
 		// eslint-disable-next-line no-undef
-		module.exports = factory( require( "jquery" ), window );
+		module.exports = factory( require( "resources/js/jquery/jquery.js" ), window );
 	} else {
 
 		// Browser globals
