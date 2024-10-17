@@ -5,26 +5,7 @@
     class="page-template-default page page-id-258 page-child parent-pageid-87 wp-custom-logo wp-embed-responsive post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12"
     itemtype="https://schema.org/WebPage" itemscope>
 <a class="screen-reader-text skip-link" href="#content" title="Перейти к содержимому">Перейти к содержимому</a>
-<header class="site-header" id="masthead" aria-label="Сайт" itemtype="https://schema.org/WPHeader" itemscope>
-    <div class="inside-header grid-container grid-parent">
-        <div class="site-branding-container">
-            <div class="site-logo">
-                <a href="{{route('index')}}" rel="home">
-                    <img class="header-image is-logo-image"
-                         alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"
-                         src="{{ Vite::asset('resources/images/LOGO.svg') }}">
-                </a>
-            </div>
-            <div class="site-branding">
-                <p class="main-title" itemprop="headline">
-                    <a href="{{route('index')}}" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT
-                        INSPEKSIYASI</a>
-                </p>
-
-            </div>
-        </div>
-    </div>
-</header>
+@include('partials.menu-header')
 {{--menu qismi--}}
 @include('partials.menu')
 
