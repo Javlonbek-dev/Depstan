@@ -1052,10 +1052,11 @@
     <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=cyrillic&#038;ver=6.6.2'
           media='all' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="icon" href="https://depstan.uz/wp-content/uploads/2020/04/cropped-icon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://depstan.uz/wp-content/uploads/2020/04/cropped-icon-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://depstan.uz/wp-content/uploads/2020/04/cropped-icon-180x180.png" />
-    <meta name="msapplication-TileImage" content="https://depstan.uz/wp-content/uploads/2020/04/cropped-icon-270x270.png" />
+    <link rel="icon" href="{{ Vite::asset('resources/images/3.png') }}" sizes="32x32"/>
+    <link rel="icon" href="{{ Vite::asset('resources/images/4.png') }}" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="{{ Vite::asset('resources/images/5.png') }}"/>
+    <meta name="msapplication-TileImage"
+          content="{{ Vite::asset('resources/images/6.png') }}"/>
 </head>
 
 
@@ -1067,15 +1068,15 @@
     <div class="inside-header grid-container grid-parent">
         <div class="site-branding-container">
             <div class="site-logo">
-                <a href="https://depstan.uz/" rel="home">
+                <a href="{{route('index')}}" rel="home">
                     <img class="header-image is-logo-image"
                          alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"
-                         src="https://depstan.uz/wp-content/uploads/2020/04/LOGO.svg"/>
+                         src="{{ Vite::asset('resources/images/LOGO.svg') }}">
                 </a>
             </div>
             <div class="site-branding">
                 <p class="main-title" itemprop="headline">
-                    <a href="https://depstan.uz/" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT
+                    <a href="{{route('index')}}" rel="home">TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT
                         INSPEKSIYASI</a>
                 </p>
 

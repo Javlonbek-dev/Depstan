@@ -14,7 +14,7 @@ Route::view('/higher_authority', 'frontend/inspeksiya_haqida/yuqori_organ')->nam
 Route::view('/approval_files', 'frontend/hujjatlar/maqullash_hujjatlari')->name('approval_files');
 Route::view('/decrees', 'frontend/hujjatlar/farmonlar')->name('decrees');
 Route::view('/weak_norm_documents', 'frontend/hujjatlar/kuchsiz_meyoriy_hujjatlar')->name('weak_norm_documents');
-Route::view('/standard_documents', 'frontend/hujjatlar/meyoriy_hujjatalar')->name('standard_documents');
+Route::view('/standard_documents', 'frontend/hujjatlar/meyoriy_hujjatlar')->name('standard_documents');
 Route::view('/laws', 'frontend/hujjatlar/qonunlar')->name('laws');
 Route::view('/minister_law', 'frontend/hujjatlar/vazir_qonun')->name('minister_law');
 //Axborot xizmatlari
