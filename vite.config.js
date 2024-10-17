@@ -33,6 +33,9 @@ export default defineConfig({
                 'resources/css/wp-content/css/post-617.css',
                 'resources/css/wp-content/css/solid.min.css',
                 'resources/css/wp-content/css/fontawesome.min.css',
+                'resources/css/wp-content/css/post-623.css',
+                'resources/css/wp-content/css/post-631.css',
+                'resources/css/wp-content/css/post-637.css',
 
                 //js
                 'resources/js/assets/core.min.js',

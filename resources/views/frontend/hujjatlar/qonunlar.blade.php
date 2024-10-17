@@ -1943,7 +1943,7 @@
         </div>
     </footer>
 </div>
-</div>
+
 <script id="generate-a11y">
     !function () {
         "use strict";
