@@ -27,7 +27,7 @@
                     <div class="inside-article">
                         <header class="entry-header">
                             <h2 class="entry-title" itemprop="headline"><a
-                                    href="https://depstan.uz/2021/03/27/tadbirkorlik-subektlariga-yordam-korsatish-bolimida-bosh-mutahassis-lavozimi/"
+                                    href="{{route('vacancy_show')}}"
                                     rel="bookmark">Тадбиркорлик субъектларига ёрдам кўрсатиш бўлимида бош мутахассис
                                     лавозими</a></h2>
                             <div
