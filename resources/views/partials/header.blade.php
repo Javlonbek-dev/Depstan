@@ -1,6 +1,5 @@
 <head>
     <meta charset="UTF-8">
-    <title>Prezidentining farmon va qarorlari &#8212; TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
     @vite([     'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/css/wp-content/css/e-swiper.min.css',

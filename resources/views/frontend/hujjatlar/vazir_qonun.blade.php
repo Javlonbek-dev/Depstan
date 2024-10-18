@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-
+<title>Vazirlar Mahkamasi qaror va farmoyishlari — TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
 <body

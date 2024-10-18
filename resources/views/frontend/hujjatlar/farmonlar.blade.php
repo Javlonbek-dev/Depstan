@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 {{--head qismi--}}
+<title>Prezidentining farmon va qarorlari &#8212; TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
 <body

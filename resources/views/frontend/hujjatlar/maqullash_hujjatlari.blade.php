@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+<title>Ma`qullash hujjatlari — TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
 

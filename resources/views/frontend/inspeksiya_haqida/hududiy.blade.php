@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+<title>Hududiy boʻlinmalar — TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
 <body

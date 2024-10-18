@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-
+<title>OAV vakillarini akkreditatsiya qilish — TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
 <body class="page-template-default page page-id-276 page-child parent-pageid-692 wp-custom-logo wp-embed-responsive post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12 elementor-page elementor-page-276"

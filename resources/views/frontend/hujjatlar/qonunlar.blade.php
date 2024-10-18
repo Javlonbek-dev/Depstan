@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-
+<title>Oʻzbekiston Respublikasi Qonunlari — TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
 <body
