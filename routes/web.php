@@ -44,7 +44,8 @@ Route::view('/complaint_application','frontend/xizmatlar/shikoyat_arizalar')->na
 
 //Vacancy
 Route::view('/vacancy','frontend/vacancy/vacancy')->name('vacancy');
-Route::view('/vacancy_show/{$id} ','frontend/vacancy/vacancy_show')->name('vacancy_show');
+Route::view('/vacancy_show','frontend/vacancy/vacancy_show')->name('vacancy_show');
 
 //Yoshlar siyosati
 Route::view('/young','frontend/yoshlar/young')->name('young');
+Route::view('/young_show','frontend/yoshlar/young_show')->name('young_show');
