@@ -29,27 +29,7 @@
 
 	<div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
 	<div class="inside-right-sidebar">
-        <aside id="recent-posts-2" class="widget inner-padding widget_recent_entries">
-		<h2 class="widget-title">Сўнгги янгиликлар</h2>
-		<ul>
-											<li>
-					<a href="https://depstan.uz/2024/02/15/fast-withdrawal-online-casino-in-australia-a-wealth-of-bonuses-for-new-and-regular-players-alike/">Fast Withdrawal Online Casino in Australia: A Wealth of Bonuses for New and Regular Players Alike</a>
-									</li>
-											<li>
-					<a href="https://depstan.uz/2024/01/18/rocket-play-good-casino-no-negative-experiences-so-far/">Rocket Play good casino, no negative experiences so far</a>
-									</li>
-											<li>
-					<a href="https://depstan.uz/2023/10/18/all-casinos-that-accept-ezeewallet-as-a-banking-method/">All Casinos That Accept eZeeWallet as a Banking Method</a>
-									</li>
-											<li>
-					<a href="https://depstan.uz/2023/09/20/1/">1</a>
-									</li>
-											<li>
-					<a href="https://depstan.uz/2022/11/22/yangi-mehnat-kodeksidagi-ozgarishlar/">Янги Меҳнат Кодексидаги ўзгаришлар</a>
-									</li>
-					</ul>
-
-        </aside>
+        @include('partials.news')
     </div>
 </div>
 

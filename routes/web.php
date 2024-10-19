@@ -10,6 +10,7 @@ Route::view('/management', 'frontend/inspeksiya_haqida/rahbariyat')->name('manag
 Route::view('/regional_department', 'frontend/inspeksiya_haqida/hududiy')->name('regional_department');
 Route::view('/structure', 'frontend/inspeksiya_haqida/tashkiliy_tuzilma')->name('structure');
 Route::view('/higher_authority', 'frontend/inspeksiya_haqida/yuqori_organ')->name('higher_authority');
+Route::view('employee_info','frontend/inspeksiya_haqida/employ_info')->name('employee_info');
 //Hujjatlar
 Route::view('/approval_files', 'frontend/hujjatlar/maqullash_hujjatlari')->name('approval_files');
 Route::view('/decrees', 'frontend/hujjatlar/farmonlar')->name('decrees');
