@@ -23,6 +23,9 @@ class Leadership extends Model
         'work_activity',
         'family_info',
         'reception_days',
+        'nationality',
+        'image'
+
     ];
 
     /**

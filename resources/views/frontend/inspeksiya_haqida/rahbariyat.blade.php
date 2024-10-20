@@ -23,29 +23,18 @@
                         </header>
                         <div class="entry-content" itemprop="text">
                             <div data-elementor-type="wp-page" data-elementor-id="192" class="elementor elementor-192">
-                                <!-- First Section -->
+                              @foreach($managers as $manager)
                                 <section class="elementor-section elementor-top-section elementor-element elementor-element-6955463f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6955463f" data-element_type="section" style="display: flex; align-items: center; margin-bottom: 40px;">
-                                    <img fetchpriority="high" decoding="async" class="alignnone wp-image-3482 size-medium" src="{{ Vite::asset('resources/images/1.jpg') }}" alt="" style="width: 200px; height: 200px; object-fit: cover; margin-right: 20px;" />
+                                    <img fetchpriority="high" decoding="async" class="alignnone wp-image-3482 size-medium" src="{{ asset('storage/' . $manager->image) }}" alt="" style="width: 200px; height: 230px; object-fit: cover; margin-right: 20px; border-radius: 10px" />
                                     <div>
-                                        <p><strong>Техник жихатдан тартибга солиш соҳасида назорат инспекцияси бошлиғи</strong></p>
-                                        <p><strong><strong>Абдурахманов Азамат Абдулхакимович</strong></strong></p>
-                                        <a href="{{route('employee_info')}}"><p>Биографияси;</p></a>
-                                        <p>Телефон: (71) 202 00 11(1800)</p>
-                                        <p>Қабул кунлари: Пайшанба 08-00 дан 11-00 гача</p>
+                                        <p><strong>{{$manager->position}}</strong></p>
+                                        <p><strong><strong>{{$manager->full_name}}</strong></strong></p>
+                                        <a href="{{route('employee_info',$manager->id)}}"><p>Биографияси;</p></a>
+                                        <p>Телефон: {{$manager->phone}}(1800)</p>
+                                        <p>Қабул кунлари: {{$manager->reception_days}}</p>
                                     </div>
                                 </section>
-
-                                <!-- Second Section -->
-                                <section class="elementor-section elementor-top-section elementor-element elementor-element-7bc34d1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7bc34d1" data-element_type="section" style="display: flex; align-items: center;">
-                                    <img decoding="async" class="alignnone size-medium wp-image-3487" src="{{ Vite::asset('resources/images/2.jpg') }}" alt="" style="width: 200px; height: 200px; object-fit: cover; margin-right: 20px;" />
-                                    <div>
-                                        <p><strong>Техник жихатдан тартибга солиш соҳасида назорат инспекцияси бошлиғи уринбосари</strong></p>
-                                        <p><b>Ниезов Сухбатжон Абдумуталибович</b></p>
-                                        <a href="{{route('employee_info')}}"><p>Биографияси;</p></a>
-                                        <p>Телефон: (71) 202 00 11(1801)</p>
-                                        <p>Қабул кунлари: Пайшанба 08-00 дан 11-00 гача</p>
-                                    </div>
-                                </section>
+                                @endforeach
                             </div>
                         </div>
 

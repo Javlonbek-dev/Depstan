@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('position');
             $table->string('full_name');
+            $table->string('image');
+            $table->string('nationality');
             $table->string('phone');
             $table->string('birth_date');
             $table->string('info');
