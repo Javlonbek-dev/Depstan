@@ -25,6 +25,7 @@ class AnalyticalFactory extends Factory
             'published_at' => $this->faker->date(),
             'image' => '{}',
             'text' => $this->faker->text(),
+            'editor'=>$this->faker->name(),
         ];
     }
 }

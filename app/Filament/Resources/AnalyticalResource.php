@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class AnalyticalResource extends Resource
 {
@@ -31,9 +29,11 @@ class AnalyticalResource extends Resource
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->required(),
-                Forms\Components\Textarea::make('text')
+                Forms\Components\RichEditor::make('text')
                     ->required()
                     ->columnSpanFull(),
+                Forms\Components\TextInput::make('editor')
+                    ->required()
             ]);
     }
 
@@ -42,6 +42,8 @@ class AnalyticalResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('editor')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('published_at')
                     ->date()

@@ -20,6 +20,7 @@ class Analytical extends Model
         'published_at',
         'image',
         'text',
+        'editor'
     ];
 
     /**
