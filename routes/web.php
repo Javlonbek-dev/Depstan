@@ -1,16 +1,18 @@
 <?php
 
+use App\Http\Controllers\ManagerController;
 use Illuminate\Support\Facades\Route;
 
 
 Route::view('/', 'frontend/index')->name('index');
 //Inspekisya haqida
 Route::view('/general_information', 'frontend/inspeksiya_haqida/umumiy_maʼlumot')->name('general_information');
-Route::view('/management', 'frontend/inspeksiya_haqida/rahbariyat')->name('management');
+Route::get('/management', [ManagerController::class, 'index'])->name('management');
 Route::view('/regional_department', 'frontend/inspeksiya_haqida/hududiy')->name('regional_department');
 Route::view('/structure', 'frontend/inspeksiya_haqida/tashkiliy_tuzilma')->name('structure');
 Route::view('/higher_authority', 'frontend/inspeksiya_haqida/yuqori_organ')->name('higher_authority');
-Route::view('employee_info','frontend/inspeksiya_haqida/employ_info')->name('employee_info');
+Route::get('employee_info/{id}', [ManagerController::class, 'show'])->name('employee_info');
+
 //Hujjatlar
 Route::view('/approval_files', 'frontend/hujjatlar/maqullash_hujjatlari')->name('approval_files');
 Route::view('/decrees', 'frontend/hujjatlar/farmonlar')->name('decrees');

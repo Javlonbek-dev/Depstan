@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class LeadershipResource extends Resource
 {
@@ -29,13 +27,16 @@ class LeadershipResource extends Resource
                 Forms\Components\TextInput::make('full_name')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\FileUpload::make('image')
+                    ->required('png', 'jpg'),
+                Forms\Components\TextInput::make('nationality')
+                    ->required(),
                 Forms\Components\TextInput::make('phone')
                     ->tel()
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('birth_date')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\DatePicker::make('birth_date')
+                    ->required(),
                 Forms\Components\TextInput::make('info')
                     ->required()
                     ->maxLength(255),
