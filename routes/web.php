@@ -28,6 +28,7 @@ Route::view('/press_release', 'frontend/axborot_xizmatlari/press_reliz')->name('
 Route::view('/presentations', 'frontend/axborot_xizmatlari/taqdimotlar')->name('presentations');
 Route::view('/video_gallery', 'frontend/axborot_xizmatlari/video_galereya')->name('video_gallery');
 Route::view('/analytical_data', 'frontend/axborot_xizmatlari/tahliliy_malumotlar')->name('analytical_data');
+Route::view('/analytical_data_show', 'frontend/axborot_xizmatlari/tahliliy_malumot_show')->name('analytical_data_show');
 
 
 //Faoliyat
