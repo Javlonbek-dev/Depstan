@@ -22,24 +22,24 @@
                 <article id="post-983" class="post-983 post type-post status-publish format-standard has-post-thumbnail hentry category-tahliliy-malumotlar no-featured-image-padding" itemtype="https://schema.org/CreativeWork" itemscope>
                     <div class="inside-article">
                         <header class="entry-header">
-                            <h2 class="entry-title" itemprop="headline"><a href="https://depstan.uz/2020/04/24/se-tamg%ca%bbalanishi/" rel="bookmark">SE TAMGʻALANISHI</a></h2>
+                            <h2 class="entry-title" itemprop="headline"><a href="{{route('analytical_data_show')}}" rel="bookmark">SE TAMGʻALANISHI</a></h2>
                             <div class="entry-meta">
                                 <span class="posted-on"><time class="entry-date published" datetime="2020-04-24T13:22:48+05:00" itemprop="datePublished">24.04.2020</time></span> </div>
                         </header>
                         <div class="post-image">
 
-                            <a href="https://depstan.uz/2020/04/24/se-tamg%ca%bbalanishi/">
+                            <a href="{{route('analytical_data_show')}}">
                                 <img fetchpriority="high" width="1500" height="800" src="https://depstan.uz/wp-content/uploads/2020/04/cemark_1500.jpg" class="attachment-full size-full wp-post-image" alt="" itemprop="image" decoding="async" srcset="https://depstan.uz/wp-content/uploads/2020/04/cemark_1500.jpg 1500w, https://depstan.uz/wp-content/uploads/2020/04/cemark_1500-300x160.jpg 300w, https://depstan.uz/wp-content/uploads/2020/04/cemark_1500-1024x546.jpg 1024w, https://depstan.uz/wp-content/uploads/2020/04/cemark_1500-768x410.jpg 768w" sizes="(max-width: 1500px) 100vw, 1500px" />
                             </a>
                         </div>
                         <div class="entry-summary" itemprop="text">
                             <p>SE tamgʻalanishi deganda nimani tushunamiz: CE (fransuzcha Conformité Européenne jumlasining qisqartmasi boʻlib, “Yevropacha muvofiqlik” maʼnosini bildiradi, inglizchasi CE Marking) tamgʻalanishi mahsulot YEI(Yevropa ittifoqi)
                                 direktivalari va uygʻunlashtirilgan standartlarining asosiy talablariga muvofiqligi hamda tegishli direktivalarga muvofiqlik tekshiruvlaridan oʻtganligini tasdiqlovchi maxsus belgi hisoblanadi. SE tamgʻalanishi&nbsp;CE-Kennzeichnung(Yevropa
-                                sifat direktivalariga muvofiqlik belgisi), Hamjamiyatning Yangi va Global yondoshuvlari Direktivalari qamroviga tushadigan mahsulotlar &#8230; <a title="SE TAMGʻALANISHI" class="read-more" href="https://depstan.uz/2020/04/24/se-tamg%ca%bbalanishi/">Read more</a></p>
+                                sifat direktivalariga muvofiqlik belgisi), Hamjamiyatning Yangi va Global yondoshuvlari Direktivalari qamroviga tushadigan mahsulotlar &#8230; <a title="SE TAMGʻALANISHI" class="read-more" href="{{route('analytical_data_show')}}">Read more</a></p>
                         </div>
 
                         <footer class="entry-meta" aria-label="Мета записи">
-                            <span class="cat-links"><span class="screen-reader-text">Рубрики </span><a href="https://depstan.uz/category/tahliliy-malumotlar/" rel="category tag">Tahliliy ma'lumotlar</a></span>
+                            <span class="cat-links"><span class="screen-reader-text">Рубрики </span><a href="{{route('analytical_data')}}" rel="category tag">Tahliliy ma'lumotlar</a></span>
                         </footer>
                     </div>
                 </article>
