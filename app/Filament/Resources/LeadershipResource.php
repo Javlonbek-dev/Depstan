@@ -24,42 +24,54 @@ class LeadershipResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('position')
                     ->required()
+                    ->label('Lavozimi')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('full_name')
                     ->required()
+                    ->label("To'liq ism sharifi")
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
-                    ->required('png', 'jpg'),
+                    ->required('png', 'jpg')
+                    ->label('Rasm'),
                 Forms\Components\TextInput::make('nationality')
-                    ->required(),
+                    ->required()
+                    ->label('Millati'),
                 Forms\Components\TextInput::make('phone')
                     ->tel()
                     ->required()
+                    ->label('Telefon raqami')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('birth_date_place')
-                    ->required(),
+                    ->required()
+                    ->label("Tug'ilgan yili va joyi"),
                 Forms\Components\TextInput::make('info')
                     ->required()
+                    ->label('Ma`lumoti')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('partisanship')
+                    ->label('Partiyaligi')
                     ->required(),
                 Forms\Components\TextInput::make('family_info')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Oilaviy holati'),
                 Forms\Components\TextInput::make('reception_days')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->label('Qabul qilish vaqti'),
                 Repeater::make('work_activities')
                     ->schema([
                         Forms\Components\TextInput::make('work_activity_date')
-                            ->required(),
+                            ->required()->label('mehnat faoliyati yillari'),
                         Forms\Components\TextInput::make('work_activity_position')
+                            ->label('mehnat faoliyati lavozimlari')
                             ->required(),
                     ])
                     ->minItems(1)
                     ->maxItems(10)
                     ->columns(2)
-                    ->required(),
+                    ->required()
+                    ->label('Mehnat faoliyati'),
             ])->columns(2);
     }
 
@@ -67,20 +79,19 @@ class LeadershipResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('position')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('full_name')
-                    ->searchable(),
+                    ->searchable()
+                    ->label("To'liq ism sharifi"),
                 Tables\Columns\TextColumn::make('phone')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('birth_date')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Telefon raqami'),
                 Tables\Columns\TextColumn::make('info')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('family_info')
+                    ->wrap()
+                    ->label('Ma`lumoti')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('reception_days')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Qabul qilish vaqti'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
