@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\ManagerController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +15,8 @@ Route::view('/higher_authority', 'frontend/inspeksiya_haqida/yuqori_organ')->nam
 Route::get('employee_info/{id}', [ManagerController::class, 'show'])->name('employee_info');
 
 //Hujjatlar
-Route::view('/approval_files', 'frontend/hujjatlar/maqullash_hujjatlari')->name('approval_files');
+Route::get('/approval_files', [ApprovalFileController::class,'index'])->name('approval_files');
+Route::get('/approval_files_download/{id}', [ApprovalFileController::class,'download'])->name('approval_files_download');
 Route::view('/decrees', 'frontend/hujjatlar/farmonlar')->name('decrees');
 Route::view('/weak_norm_documents', 'frontend/hujjatlar/kuchsiz_meyoriy_hujjatlar')->name('weak_norm_documents');
 Route::view('/standard_documents', 'frontend/hujjatlar/meyoriy_hujjatlar')->name('standard_documents');
