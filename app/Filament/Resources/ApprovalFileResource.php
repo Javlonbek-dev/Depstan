@@ -24,11 +24,12 @@ class ApprovalFileResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
-                    ->required()
+                    ->required('pdf')
+                    ->label('fayl nomi')
                     ->maxLength(255),
-                Forms\Components\TextInput::make('file')
+                Forms\Components\FileUpload::make('file')
                     ->required()
-                    ->maxLength(255),
+                    ->label('fayl'),
             ]);
     }
 

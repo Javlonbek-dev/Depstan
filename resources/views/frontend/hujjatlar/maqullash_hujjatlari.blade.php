@@ -25,12 +25,13 @@
                             <h1 class="entry-title" itemprop="headline">Ma`qullash hujjatlari</h1>
                         </header>
                         <div class="entry-content" itemprop="text">
-                            <p><a href="https://depstan.uz/wp-content/uploads/2024/07/buyurtma.docx">Buyurtma</a></p>
-                            <p><a href="https://depstan.uz/wp-content/uploads/2024/07/texnik-pasporti.docx">Texnik passport</a></p>
-                            <p><a href="https://depstan.uz/wp-content/uploads/2024/07/maqullash-sohasi.docx">Ma&#8217;qullash sohasi</a></p>
-                            <p><em>Ma&#8217;qullash hujjatlarini yuborish uchun elektron pochta: <a href="mailto:approval@depstan.uz">approval@depstan.uz</a></em></p>
-                            <p></p>
+                            @foreach($approval_file as $file)
+                                <p>{{$file->id}}) <a href="{{ route('approval_files_download', $file->id) }}">{{ $file->name }}</a></p>
+                            @endforeach
+                            <p><em>Ma'qullash hujjatlarini yuborish uchun elektron pochta: <a
+                                        href="mailto:approval@depstan.uz">approval@depstan.uz</a></em></p>
                         </div>
+
                     </div>
                 </article>
             </main>
