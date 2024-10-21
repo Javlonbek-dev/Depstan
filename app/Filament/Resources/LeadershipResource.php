@@ -6,6 +6,7 @@ use App\Filament\Resources\LeadershipResource\Pages;
 use App\Filament\Resources\LeadershipResource\RelationManagers;
 use App\Models\Leadership;
 use Filament\Forms;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -35,12 +36,12 @@ class LeadershipResource extends Resource
                     ->tel()
                     ->required()
                     ->maxLength(255),
-                Forms\Components\DatePicker::make('birth_date')
+                Forms\Components\TextInput::make('birth_date_place')
                     ->required(),
                 Forms\Components\TextInput::make('info')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('work_activity')
+                Forms\Components\TextInput::make('partisanship')
                     ->required(),
                 Forms\Components\TextInput::make('family_info')
                     ->required()
@@ -48,7 +49,18 @@ class LeadershipResource extends Resource
                 Forms\Components\TextInput::make('reception_days')
                     ->required()
                     ->maxLength(255),
-            ]);
+                Repeater::make('work_activities')
+                    ->schema([
+                        Forms\Components\TextInput::make('work_activity_date')
+                            ->required(),
+                        Forms\Components\TextInput::make('work_activity_position')
+                            ->required(),
+                    ])
+                    ->minItems(1)
+                    ->maxItems(10)
+                    ->columns(2)
+                    ->required(),
+            ])->columns(2);
     }
 
     public static function table(Table $table): Table

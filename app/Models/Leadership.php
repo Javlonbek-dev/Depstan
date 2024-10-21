@@ -18,13 +18,14 @@ class Leadership extends Model
         'position',
         'full_name',
         'phone',
-        'birth_date',
+        'birth_date_place',
         'info',
-        'work_activity',
         'family_info',
         'reception_days',
         'nationality',
-        'image'
+        'work_activities',
+        'image',
+        'partisanship'
 
     ];
 
@@ -35,6 +36,6 @@ class Leadership extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'work_activity' => 'array',
+        'work_activities' => 'array',
     ];
 }

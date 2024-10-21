@@ -15,6 +15,9 @@ class ManagerController
     public function show($id)
     {
         $manager=Leadership::findOrFail($id);
-        return view('frontend.inspeksiya_haqida.employ_info',compact('manager'));
+        $work_activities = is_string($manager->work_activities)
+            ? json_decode($manager->work_activities, true)
+            : $manager->work_activities;
+        return view('frontend.inspeksiya_haqida.employ_info', compact('manager'))->with('work_activities', $work_activities);
     }
 }

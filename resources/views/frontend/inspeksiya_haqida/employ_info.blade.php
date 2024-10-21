@@ -30,43 +30,27 @@
                                     <img src="{{ asset('storage/' . $manager->image) }}"  alt="" style="height: 200px;"/>
                                 </figure>
                             </div>
-
-
                             <p>{{$manager->birth_date}} Жиззах вилояти Зафаробод туманида туғилган.</p>
-
-
                             <p>Миллати-{{$manager->nationality}}</p>
-
-
                             <p>{{$manager->info}}</p>
-
-
                             <p>Партиявийлиги: O’zLiDeP аъзоси</p>
-
-
-                            <hr class="wp-block-separator"/>
-
-
-                            <p class="has-text-align-center"><strong>Меҳнат фаолияти:</strong></p>
-
-
+                            <hr style="" class="wp-block-separator"/>
+                            <p style="text-align: center; "><strong>Меҳнат фаолияти:</strong></p>
                             <figure class="wp-block-table">
                                 <table class="has-fixed-layout">
                                     <tbody>
-                                    <tr>
-                                        <td>1996-2000 йй.</td>
-                                        <td>{{$manager->work_activity}}</td>
-                                    </tr>
-
+                                    @foreach( $work_activities as $manager_work )
+                                        <tr>
+                                            <td>{{ $manager_work['work_activity_date']}}</td>
+                                            <td>{{ $manager_work['work_activity_position']}}</td>
+                                        </tr>
+                                    @endforeach
                                     </tbody>
                                 </table>
-                                <figcaption>{{$manager->family_info}}</figcaption>
+                                <figcaption>{{$manager->full_name}} {{$manager->family_info}}</figcaption>
                             </figure>
-
-
                             <p></p>
                         </div>
-
                     </div>
                 </article>
             </main>
