@@ -24,11 +24,12 @@ class LeadershipFactory extends Factory
             'position' => $this->faker->word(),
             'full_name' => $this->faker->word(),
             'phone' => $this->faker->phoneNumber(),
-            'birth_date' => $this->faker->word(),
+            'birth_date_place' => $this->faker->word(),
             'info' => $this->faker->word(),
             'work_activity' => '{}',
             'family_info' => $this->faker->word(),
             'reception_days' => $this->faker->word(),
+            'partisanship'=>$this->faker->word(),
         ];
     }
 }

@@ -17,10 +17,11 @@ return new class extends Migration
             $table->string('full_name');
             $table->string('image');
             $table->string('nationality');
+            $table->string('partisanship');
             $table->string('phone');
-            $table->string('birth_date');
+            $table->string('birth_date_place');
             $table->string('info');
-            $table->json('work_activity');
+            $table->json('work_activities');
             $table->string('family_info');
             $table->string('reception_days');
             $table->timestamps();
