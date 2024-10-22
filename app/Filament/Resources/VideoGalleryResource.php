@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class VideoGalleryResource extends Resource
 {
@@ -25,11 +23,13 @@ class VideoGalleryResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('content')
                     ->required()
+                    ->label('Content')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('link')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\DatePicker::make('published_at')
+                    ->label('Chop qilingan sana ')
                     ->required(),
             ]);
     }
@@ -39,6 +39,7 @@ class VideoGalleryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('content')
+                    ->wrap()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('link')
                     ->searchable(),
