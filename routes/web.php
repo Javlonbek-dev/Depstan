@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\VideoController;
@@ -25,7 +26,8 @@ Route::view('/laws', 'frontend/hujjatlar/qonunlar')->name('laws');
 Route::view('/minister_law', 'frontend/hujjatlar/vazir_qonun')->name('minister_law');
 //Axborot xizmatlari
 Route::view('/state_budget', 'frontend/axborot_xizmatlari/davlat_byudjet')->name('state_budget');
-Route::view('/ads_tenders', 'frontend/axborot_xizmatlari/elonlar_tenderlar')->name('ads_tenders');
+Route::get('/ads_tenders', [AdvertisementController::class, 'index'])->name('ads_tenders');
+Route::get('/ads_tenders_download/{id}', [AdvertisementController::class, 'download'])->name('ads_tenders_download');
 Route::view('/photo_gallery', 'frontend/axborot_xizmatlari/foto_galereya')->name('photo_gallery');
 Route::view('/publications', 'frontend/axborot_xizmatlari/nashrlar')->name('publications');
 Route::view('/media_representatives', 'frontend/axborot_xizmatlari/OAV_vakillar')->name('media_representatives');

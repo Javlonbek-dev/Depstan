@@ -23,8 +23,12 @@
 
 
                         <div class="entry-content" itemprop="text">
-
-                            <p><a href="http://depstan.uz/wp-content/uploads/2022/10/yoshlar-dasturi.pdf">“Yosh mutaxassislarni tanlashning namunaviy dasturi”</a></p>
+                            @foreach($advertisements as $advertisement)
+                                <p>
+                                    <a href="{{route('ads_tenders_download', $advertisement->id)}}">{{$advertisement->name}}</a>
+                                </p>
+                                <p>{{Carbon\Carbon::parse($advertisement->published_at)->format('d.m.Y')}}</p>
+                            @endforeach
                         </div>
 
                     </div>
