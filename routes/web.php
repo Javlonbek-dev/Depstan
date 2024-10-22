@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -30,7 +31,7 @@ Route::view('/publications', 'frontend/axborot_xizmatlari/nashrlar')->name('publ
 Route::view('/media_representatives', 'frontend/axborot_xizmatlari/OAV_vakillar')->name('media_representatives');
 Route::view('/press_release', 'frontend/axborot_xizmatlari/press_reliz')->name('press_release');
 Route::view('/presentations', 'frontend/axborot_xizmatlari/taqdimotlar')->name('presentations');
-Route::view('/video_gallery', 'frontend/axborot_xizmatlari/video_galereya')->name('video_gallery');
+Route::get('/video_gallery', [VideoController::class, 'index'])->name('video_gallery');
 Route::view('/analytical_data', 'frontend/axborot_xizmatlari/tahliliy_malumotlar')->name('analytical_data');
 Route::view('/analytical_data_show', 'frontend/axborot_xizmatlari/tahliliy_malumot_show')->name('analytical_data_show');
 
