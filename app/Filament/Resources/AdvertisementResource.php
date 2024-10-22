@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class AdvertisementResource extends Resource
 {
@@ -25,11 +23,12 @@ class AdvertisementResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
+                    ->label('Fayl nomi')
                     ->maxLength(255),
-                Forms\Components\TextInput::make('file')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\FileUpload::make('file')
+                    ->required(),
                 Forms\Components\DatePicker::make('published_at')
+                    ->label('Nashr qilingan vaqti ')
                     ->required(),
             ]);
     }
