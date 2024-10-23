@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\StateBudgetController;
 use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,8 +25,10 @@ Route::view('/weak_norm_documents', 'frontend/hujjatlar/kuchsiz_meyoriy_hujjatla
 Route::view('/standard_documents', 'frontend/hujjatlar/meyoriy_hujjatlar')->name('standard_documents');
 Route::view('/laws', 'frontend/hujjatlar/qonunlar')->name('laws');
 Route::view('/minister_law', 'frontend/hujjatlar/vazir_qonun')->name('minister_law');
+
 //Axborot xizmatlari
-Route::view('/state_budget', 'frontend/axborot_xizmatlari/davlat_byudjet')->name('state_budget');
+Route::get('/state_budget', [StateBudgetController::class, 'index'])->name('state_budget');
+Route::get('/state_budget_download/{id}', [StateBudgetController::class, 'download'])->name('state_budget_download');
 Route::get('/ads_tenders', [AdvertisementController::class, 'index'])->name('ads_tenders');
 Route::get('/ads_tenders_download/{id}', [AdvertisementController::class, 'download'])->name('ads_tenders_download');
 Route::view('/photo_gallery', 'frontend/axborot_xizmatlari/foto_galereya')->name('photo_gallery');
