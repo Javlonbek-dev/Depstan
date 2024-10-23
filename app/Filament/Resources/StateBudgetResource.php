@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class StateBudgetResource extends Resource
 {
@@ -26,9 +24,8 @@ class StateBudgetResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('file')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\FileUpload::make('file')
+                    ->required(),
             ]);
     }
 
@@ -37,7 +34,8 @@ class StateBudgetResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
+                    ->searchable()
+                    ->wrap(),
                 Tables\Columns\TextColumn::make('file')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
