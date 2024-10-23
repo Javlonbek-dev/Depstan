@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class PresentationsResource extends Resource
 {
@@ -26,9 +24,8 @@ class PresentationsResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('file')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\FileUpload::make('file')
+                    ->required(),
             ]);
     }
 
@@ -37,8 +34,10 @@ class PresentationsResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                    ->wrap()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('file')
+                    ->icon('heroicon-o-document')  // Change the icon here
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

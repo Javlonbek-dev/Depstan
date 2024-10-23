@@ -23,14 +23,12 @@
 
 
                         <div class="entry-content" itemprop="text">
-
-                            <p><strong><a href="https://depstan.uz/wp-content/uploads/2021/03/ozstandart_huzuridagi_departament_3.pptx">Texnik jihatdan tartibga solish,standartlashtirish, sertifikatlashtirish va metrologiya sohalarida tadbirkorlik subyektlariga profilaktika tadbirlari orqali amaliy yordam koʻrsatish</a></strong></p>
-
-
-
-                            <p><a href="https://depstan.uz/wp-content/uploads/2021/03/sifatsiz-mahsulotlar-2.pptx"><strong>Sifatsiz mahsulotlar</strong></a></p>
+                            @foreach($presentations as $presentation)
+                                <p>
+                                    <strong><a href="{{route('presentations_download', $presentation->id)}}">{{$presentation->name}}</a></strong>
+                                </p>
+                            @endforeach
                         </div>
-
                     </div>
                 </article>
             </main>
