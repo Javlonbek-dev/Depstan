@@ -31,7 +31,7 @@ class AnalyticalResource extends Resource
                     ->required(),
                 Forms\Components\RichEditor::make('text')
                     ->required()
-                    ->columnSpanFull(),
+                    ->fileAttachmentsDirectory('analytics/images')->columnSpanFull(),
                 Forms\Components\TextInput::make('editor')
                     ->required()
             ]);

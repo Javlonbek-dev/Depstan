@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdvertisementController;
+use App\Http\Controllers\AnalyticalController;
 use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\PresentationsController;
@@ -39,8 +40,8 @@ Route::view('/press_release', 'frontend/axborot_xizmatlari/press_reliz')->name('
 Route::get('/presentations', [PresentationsController::class, 'index'])->name('presentations');
 Route::get('/presentations_download/{id}', [PresentationsController::class, 'download'])->name('presentations_download');
 Route::get('/video_gallery', [VideoController::class, 'index'])->name('video_gallery');
-Route::view('/analytical_data', 'frontend/axborot_xizmatlari/tahliliy_malumotlar')->name('analytical_data');
-Route::view('/analytical_data_show', 'frontend/axborot_xizmatlari/tahliliy_malumot_show')->name('analytical_data_show');
+Route::get('/analytical_data', [AnalyticalController::class, 'index'])->name('analytical_data');
+Route::get('/analytical_data_show/{id}', [AnalyticalController::class, 'show'])->name('analytical_data_show');
 
 
 //Faoliyat
