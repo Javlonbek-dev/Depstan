@@ -7,6 +7,7 @@ use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\CorruptionController;
 use App\Http\Controllers\CorruptionTitleController;
 use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\OpenDataController;
 use App\Http\Controllers\PresentationsController;
 use App\Http\Controllers\StateBudgetController;
 use App\Http\Controllers\VideoController;
@@ -58,7 +59,8 @@ Route::view('/export_help','frontend/xizmatlar/eksport')->name('export_help');
 Route::view('/citizens','frontend/xizmatlar/fuqarolar')->name('citizens');
 Route::view('/interactive_services','frontend/xizmatlar/interaktiv_xizmatlar')->name('interactive_services');
 Route::view('/consumption_help','frontend/xizmatlar/istemol_yordam')->name('consumption_help');
-Route::view('/open_data','frontend/xizmatlar/ochiq_malumotlar')->name('open_data');
+Route::get('/open_data', [OpenDataController::class, 'index'])->name('open_data');
+Route::get('/open_data_download/{id}', [OpenDataController::class, 'download'])->name('open_data_download');
 Route::view('/complaint_application','frontend/xizmatlar/shikoyat_arizalar')->name('complaint_application');
 
 //Vacancy

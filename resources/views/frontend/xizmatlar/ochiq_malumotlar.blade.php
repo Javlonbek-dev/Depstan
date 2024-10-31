@@ -5,8 +5,7 @@
 @include('partials.header')
 
 <body
-    class="page-template-default page page-id-824 page-child parent-pageid-804 wp-custom-logo wp-embed-responsive post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12"
-    itemtype="https://schema.org/WebPage" itemscope>
+    class="page-template-default page page-id-824 page-child parent-pageid-804 wp-custom-logo wp-embed-responsive post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12">
 <a class="screen-reader-text skip-link" href="#content" title="Перейти к содержимому">Перейти к содержимому</a>
 @include('partials.menu-header')
 @include('partials.menu')
@@ -16,8 +15,7 @@
         <div class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75" id="primary">
             <main class="site-main" id="main">
 
-                <article id="post-824" class="post-824 page type-page status-publish"
-                         itemtype="https://schema.org/CreativeWork" itemscope>
+                <article id="post-824" class="post-824 page type-page status-publish">
                     <div class="inside-article">
 
                         <header class="entry-header">
@@ -26,43 +24,11 @@
 
 
                         <div class="entry-content" itemprop="text">
-
-                            <p>
-                                <a href="http://depstan.uz/wp-content/uploads/2022/07/2021_jil_harazhatlar_smetasi_izhrosi_toғrisida_hisobot.xlsx">2021-yil
-                                    yakuni bo&#8217;yicha xarajatlar smetasi ijrosi to&#8217;g&#8217;risida xisobot</a>
-                            </p>
-
-
-                            <p>
-                                <a href="http://depstan.uz/wp-content/uploads/2022/07/finansovyh-rezultatah-2021-god.xlsx">2021-yil
-                                    yakuni bo&#8217;yicha moliyaviy natijalar bo&#8217;yicha xisobot</a></p>
-
-
-                            <p><a href="http://depstan.uz/wp-content/uploads/2022/04/1-chorak-balans-2022j.pdf">2022-yil
-                                    I chorak bo&#8217;yicha buxgalteriya balansi</a></p>
-
-
-                            <p><a href="http://depstan.uz/wp-content/uploads/2022/04/1-chorak-f-2-2022j-1.pdf">2022-yil
-                                    I chorak xarajatlar smetasi ijrosi to&#8217;g&#8217;risida xisobot</a></p>
-
-
-                            <p>
-                                <a href="http://\http://depstan.uz/wp-content/uploads/2022/10/3-chorak-smeta-izhrosi.xlsx">2022-yil
-                                    III chorak xarajatlar smetasi ijrosi to‘g‘risida xisobot</a><br><a
-                                    href="http://depstan.uz/wp-content/uploads/2022/10/balans-3-chorak.xlsx">2022-yil
-                                    III chorak bo‘yicha buxgalteriya balansi</a></p>
-
-
-                            <p><a rel="noreferrer noopener"
-                                  href="http://depstan.uz/wp-content/uploads/2023/02/2022-yil-4-chorak-smeta-ijrosi.pdf"
-                                  target="_blank">2022-yil IV chorak xarajatlar smetasi ijrosi to‘g‘risida
-                                    xisobot</a><br><a
-                                    href="http://depstan.uz/wp-content/uploads/2023/02/2022-yil-buxgalteriya-balansi-4-chorak.pdf"
-                                    target="_blank" rel="noreferrer noopener">2022-yil IV chorak bo‘yicha buxgalteriya
-                                    balansi</a></p>
-
-
-                            <p></p>
+                            @foreach($open_data as $data)
+                                <p>
+                                    <a href="{{route('open_data_download', $data->id)}}">{{$data->name}}</a>
+                                </p>
+                            @endforeach
                         </div>
 
                     </div>
