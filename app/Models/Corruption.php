@@ -17,6 +17,8 @@ class Corruption extends Model
     protected $fillable = [
         'name',
         'file',
+        'link',
+        'title_id'
     ];
 
     /**
@@ -27,4 +29,9 @@ class Corruption extends Model
     protected $casts = [
         'id' => 'integer',
     ];
+
+    public function title()
+    {
+        return $this->belongsTo(CorruptionTitle::class);
+    }
 }
