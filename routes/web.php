@@ -10,6 +10,7 @@ use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\OpenDataController;
 use App\Http\Controllers\PresentationsController;
 use App\Http\Controllers\StateBudgetController;
+use App\Http\Controllers\VacancyController;
 use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
@@ -64,8 +65,8 @@ Route::get('/open_data_download/{id}', [OpenDataController::class, 'download'])-
 Route::view('/complaint_application','frontend/xizmatlar/shikoyat_arizalar')->name('complaint_application');
 
 //Vacancy
-Route::view('/vacancy','frontend/vacancy/vacancy')->name('vacancy');
-Route::view('/vacancy_show','frontend/vacancy/vacancy_show')->name('vacancy_show');
+Route::get('/vacancy',[VacancyController::class, 'index'])->name('vacancy');
+Route::get('/vacancy_show/{id}',[VacancyController::class, 'show'])->name('vacancy_show');
 
 //Yoshlar siyosati
 Route::view('/young','frontend/yoshlar/young')->name('young');
