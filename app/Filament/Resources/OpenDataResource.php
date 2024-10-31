@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class OpenDataResource extends Resource
 {
@@ -26,10 +24,9 @@ class OpenDataResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('file')
-                    ->required()
-                    ->maxLength(255),
-            ]);
+                Forms\Components\FileUpload::make('file')
+                    ->required(),
+            ])->columns(1);
     }
 
     public static function table(Table $table): Table
