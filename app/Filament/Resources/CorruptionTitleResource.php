@@ -2,18 +2,18 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\CorruptionResource\Pages;
-use App\Filament\Resources\CorruptionResource\RelationManagers;
-use App\Models\Corruption;
+use App\Filament\Resources\CorruptionTitleResource\Pages;
+use App\Filament\Resources\CorruptionTitleResource\RelationManagers;
+use App\Models\CorruptionTitle;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 
-class CorruptionResource extends Resource
+class CorruptionTitleResource extends Resource
 {
-    protected static ?string $model = Corruption::class;
+    protected static ?string $model = CorruptionTitle::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -21,13 +21,9 @@ class CorruptionResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
+                Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\FileUpload::make('file'),
-                Forms\Components\TextInput::make('link'),
-                Forms\Components\Select::make('title_id')
-                ->relationship('title', 'title')
             ]);
     }
 
@@ -35,9 +31,7 @@ class CorruptionResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('file')
+                Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
@@ -71,9 +65,9 @@ class CorruptionResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListCorruptions::route('/'),
-            'create' => Pages\CreateCorruption::route('/create'),
-            'edit' => Pages\EditCorruption::route('/{record}/edit'),
+            'index' => Pages\ListCorruptionTitles::route('/'),
+            'create' => Pages\CreateCorruptionTitle::route('/create'),
+            'edit' => Pages\EditCorruptionTitle::route('/{record}/edit'),
         ];
     }
 }

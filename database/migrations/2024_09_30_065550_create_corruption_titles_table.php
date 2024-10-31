@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('corruptions', function (Blueprint $table) {
+        Schema::create('corruption_titles', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('file')->nullable();
-            $table->string('link')->nullable();
-            $table->foreignId('title_id')->constrained('corruption_titles')->onDelete('cascade');
+            $table->string('title');
             $table->timestamps();
         });
     }
@@ -26,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('corruptions');
+        Schema::dropIfExists('corruption_titles');
     }
 };
