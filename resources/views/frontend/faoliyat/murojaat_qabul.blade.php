@@ -27,26 +27,7 @@
                             @foreach($accepts as $accept )
                                 <div class="content-item" style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
                                     <figure class="wp-block-image size-large" style="flex-shrink: 0;">
-                                        <img decoding="async" src="{{ asset('storage/' . $accept->image) }}" alt="Image Description" style="max-width: 400px; height: auto;" />
-
-                                        <!-- Contact Information Below Image -->
-                                        <div class="contact-info" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 10px;">
-                                            <div>
-                                                <p><strong>Rahbar:</strong></p>
-                                                <p>{{$accept->manager_name}}</p>
-                                                <p><strong>Tel:</strong> {{$accept->employ_phone}}</p>
-                                            </div>
-                                            <div>
-                                                <p><strong>Qabulxona:</strong></p>
-                                                <p>{{$accept->reception_name}}</p>
-                                                <p><strong>Tel:</strong> {{$accept->reception_phone}}</p>
-                                            </div>
-                                            <div>
-                                                <p><strong>Komplayens nazorat bo‘limi:</strong></p>
-                                                <p>{{$accept->control_name}}</p>
-                                                <p><strong>Tel:</strong> {{$accept->control_phone}}</p>
-                                            </div>
-                                        </div>
+                                        <img decoding="async" src="{{ asset('storage/' . $accept->image) }}" alt="Image Description" style="max-width: 200px; height: auto;" />
                                     </figure>
 
                                     <div class="text-content" style="flex: 1;">
@@ -62,8 +43,28 @@
                                         </p>
 
                                         <p>Yuqoridagilardan kelib chiqib bizning faoliyatda korrupsiyaviy holatlar yoki byurokratik to‘siqlarga uchrash holatlari aniqlangan holatda bizning quyidagi aloqa manzillarimizga murojaat qilishingiz mumkin.</p>
+
                                     </div>
                                 </div>
+                                <div class="contact-info" style="display: flex; flex-wrap: wrap; gap: 40px; align-content: center; justify-content:start; ">
+                                    <div>
+                                        <p><strong>Rahbar:</strong></p>
+                                        <p><strong>Komplayens nazorat bo‘limi:</strong></p>
+                                        <p><strong>Qabulxona:</strong></p>
+
+                                    </div>
+                                    <div>
+                                        <p>{{$accept->manager_name}}</p>
+                                        <p>{{$accept->reception_name}}</p>
+                                        <p>{{$accept->control_name}}</p>
+                                    </div>
+                                    <div>
+                                        <p><strong>Tel:</strong> {{$accept->employ_phone}}</p>
+                                        <p><strong>Tel:</strong> {{$accept->reception_phone}}</p>
+                                        <p><strong>Tel:</strong> {{$accept->control_phone}}</p>
+                                    </div>
+                                </div>
+
                             @endforeach
                         </div>
 
