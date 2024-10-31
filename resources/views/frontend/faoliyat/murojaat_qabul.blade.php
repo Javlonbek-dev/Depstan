@@ -24,41 +24,48 @@
 
 
                         <div class="entry-content" itemprop="text">
+                            @foreach($accepts as $accept )
+                                <div class="content-item" style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
+                                    <figure class="wp-block-image size-large" style="flex-shrink: 0;">
+                                        <img decoding="async" src="{{ asset('storage/' . $accept->image) }}" alt="Image Description" style="max-width: 400px; height: auto;" />
 
-                            <figure class="wp-block-image size-large">
-                                <img decoding="async" src="{{}}" alt="Image Description" />
-                            </figure>
+                                        <!-- Contact Information Below Image -->
+                                        <div class="contact-info" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 10px;">
+                                            <div>
+                                                <p><strong>Rahbar:</strong></p>
+                                                <p>{{$accept->manager_name}}</p>
+                                                <p><strong>Tel:</strong> {{$accept->employ_phone}}</p>
+                                            </div>
+                                            <div>
+                                                <p><strong>Qabulxona:</strong></p>
+                                                <p>{{$accept->reception_name}}</p>
+                                                <p><strong>Tel:</strong> {{$accept->reception_phone}}</p>
+                                            </div>
+                                            <div>
+                                                <p><strong>Komplayens nazorat bo‘limi:</strong></p>
+                                                <p>{{$accept->control_name}}</p>
+                                                <p><strong>Tel:</strong> {{$accept->control_phone}}</p>
+                                            </div>
+                                        </div>
+                                    </figure>
 
-                            <p>O‘zbekiston Respublikasi Prezidentining 29.06.2020 yildagi
-                                <a href="https://lex.uz/docs/-4875784">&#171;O‘ZBEKISTON RESPUBLIKASIDA KORRUPSIYAGA QARSHI KURASHISH TIZIMINI TAKOMILLASHTIRISH BO‘YICHA QO‘SHIMCHA CHORA-TADBIRLAR TO‘G‘RISIDA&#187;</a>
-                                PF-6013-son Farmoni, 06.07.2021 yildagi
-                                <a href="https://lex.uz/docs/-5495533">&#171;KORRUPSIYAGA QARSHI KURASHISH FAOLIYATINI SAMARALI TASHKIL ETISHGA DOIR QO‘SHIMCHA CHORA-TADBIRLAR TO‘G‘RISIDA&#187;</a>
-                                PQ-5177-son Qaroriga muvofiq 2021 yil 1 oktabrdan boshlab, barcha davlat organlari va tashkilotlari, shu jumladan viloyat hokimliklarida korrupsiyaga qarshi ichki nazorat tuzilmalari faoliyati yo‘lga qo‘yilishi belgilangan.
-                            </p>
+                                    <div class="text-content" style="flex: 1;">
+                                        <p>O‘zbekiston Respublikasi Prezidentining 29.06.2020 yildagi
+                                            <a href="https://lex.uz/docs/-4875784">&#171;O‘ZBEKISTON RESPUBLIKASIDA KORRUPSIYAGA QARSHI KURASHISH TIZIMINI TAKOMILLASHTIRISH BO‘YICHA QO‘SHIMCHA CHORA-TADBIRLAR TO‘G‘RISIDA&#187;</a>
+                                            PF-6013-son Farmoni, 06.07.2021 yildagi
+                                            <a href="https://lex.uz/docs/-5495533">&#171;KORRUPSIYAGA QARSHI KURASHISH FAOLIYATINI SAMARALI TASHKIL ETISHGA DOIR QO‘SHIMCHA CHORA-TADBIRLAR TO‘G‘RISIDA&#187;</a>
+                                            PQ-5177-son Qaroriga muvofiq 2021 yil 1 oktabrdan boshlab, barcha davlat organlari va tashkilotlari, shu jumladan viloyat hokimliklarida korrupsiyaga qarshi ichki nazorat tuzilmalari faoliyati yo‘lga qo‘yilishi belgilangan.
+                                        </p>
 
-                            <p>Xususan, O‘zbekiston Texnik jihatdan tartibga solish agentligining Texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya sohasida davlat nazorati departamentida korrupsiya omillariga barham berish maqsadida
-                                bir qancha <a href="https://depstan.uz/uz/antikorrupsiya/">huquqiy-me’yoriy hujjatlar</a> ishlab chiqilgan.
-                            </p>
+                                        <p>Xususan, O‘zbekiston Texnik jihatdan tartibga solish agentligining Texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya sohasida davlat nazorati departamentida korrupsiya omillariga barham berish maqsadida
+                                            bir qancha <a href="{{route('corruption')}}">huquqiy-me’yoriy hujjatlar</a> ishlab chiqilgan.
+                                        </p>
 
-                            <p>Yuqoridagilardan kelib chiqib bizning faoliyatda korrupsiyaviy holatlar yoki byurokratik to‘siqlarga uchrash holatlari aniqlangan holatda bizning quyidagi aloqa manzillarimizga murojaat qilishingiz mumkin.</p>
-
-                            <p><strong>Rahbar:</strong></p>
-                            <p>K. E. Bekmirzayev</p>
-
-                            <p><strong>Tel:</strong> (71) 202 00 11 (1801)</p>
-
-                            <p><strong>Qabulxona:</strong></p>
-                            <p>N. Azimova</p>
-
-                            <p><strong>Tel:</strong> (71) 202 00 11 (1814)</p>
-
-                            <p><strong>Komplayens nazorat bo‘limi:</strong></p>
-                            <p>D. Shukuraliyev</p>
-
-                            <p><strong>Tel:</strong> (71) 202 00 11 (1806)</p>
-
+                                        <p>Yuqoridagilardan kelib chiqib bizning faoliyatda korrupsiyaviy holatlar yoki byurokratik to‘siqlarga uchrash holatlari aniqlangan holatda bizning quyidagi aloqa manzillarimizga murojaat qilishingiz mumkin.</p>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
-
 
                     </div>
                 </article>
