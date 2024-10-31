@@ -9,13 +9,13 @@
 <a class="screen-reader-text skip-link" href="#content" title="Перейти к содержимому">Перейти к содержимому</a>
 @include('partials.menu-header')
 @include('partials.menu')
-<div class="site grid-container container hfeed grid-parent" id="page">
+<div class="site grid-container container feed grid-parent" id="page">
     <div class="site-content" id="content">
 
         <div class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75" id="primary">
             <main class="site-main" id="main">
 
-                <article id="post-2732" class="post-2732 page type-page status-publish" itemtype="https://schema.org/CreativeWork" itemscope>
+                <article id="post-2732" class="post-2732 page type-page status-publish" itemscope>
                     <div class="inside-article">
 
                         @foreach ($titles as $title)
