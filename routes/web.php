@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AcceptController;
 use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\AnalyticalController;
 use App\Http\Controllers\ApprovalFileController;
@@ -50,7 +51,7 @@ Route::get('/analytical_data_show/{id}', [AnalyticalController::class, 'show'])-
 Route::get('corruption', [CorruptionTitleController::class, 'index'])->name('corruption');
 Route::get('/corruptions/download/{id}', [CorruptionController::class, 'download'])->name('corruptions.download');
 Route::view('state_control', 'frontend/faoliyat/davlat_nazorat')->name('state_control');
-Route::view('application_accept', 'frontend/faoliyat/murojaat_qabul')->name('application_accept');
+Route::get('application_accept', [AcceptController::class, 'index'])->name('application_accept');
 
 //Xizmatlar
 Route::view('/export_help','frontend/xizmatlar/eksport')->name('export_help');

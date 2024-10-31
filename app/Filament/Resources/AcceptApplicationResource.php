@@ -23,9 +23,6 @@ class AcceptApplicationResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Textarea::make('text')
-                    ->required()
-                    ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
                     ->image()
                     ->required(),
@@ -50,6 +47,8 @@ class AcceptApplicationResource extends Resource
                     ->tel()
                     ->required()
                     ->maxLength(255),
+                Forms\Components\RichEditor::make('text')
+                    ->columnSpanFull(),
             ]);
     }
 
@@ -57,7 +56,8 @@ class AcceptApplicationResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\ImageColumn::make('image')
+                ->circular(),
                 Tables\Columns\TextColumn::make('manager_name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('employ_phone')
