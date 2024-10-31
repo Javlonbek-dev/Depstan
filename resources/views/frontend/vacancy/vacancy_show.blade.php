@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 
-<title>Тадбиркорлик субъектларига ёрдам кўрсатиш бўлимида бош мутахассис лавозими &#8212; TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
+<title>{{$vacancy->name}}</title>
 @include('partials.header')
 
 <body class="post-template-default single single-post postid-1512 single-format-standard wp-custom-logo wp-embed-responsive post-image-above-header post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12"
@@ -18,9 +18,9 @@
                 <article id="post-1512" class="post-1512 post type-post status-publish format-standard hentry category-bosh-ish-orinlari" itemtype="https://schema.org/CreativeWork" itemscope>
                     <div class="inside-article">
                         <header class="entry-header">
-                            <h1 class="entry-title" itemprop="headline">Тадбиркорлик субъектларига ёрдам кўрсатиш бўлимида бош мутахассис лавозими</h1>
+                            <h1 class="entry-title" itemprop="headline">{{$vacancy->name}}</h1>
                             <div class="entry-meta">
-                                <span class="posted-on"><time class="updated" datetime="2021-03-29T17:28:10+05:00" itemprop="dateModified">29.03.2021</time><time class="entry-date published" datetime="2021-03-27T10:02:00+05:00" itemprop="datePublished">27.03.2021</time></span>                                    </div>
+                                <span class="posted-on"><time class="entry-date published" itemprop="datePublished">{{Carbon\Carbon::parse($vacancy->published_at)->format('d.m.Y') }}</time></span>                                    </div>
                         </header>
 
                         <div class="entry-content" itemprop="text">
@@ -30,45 +30,43 @@
                                     <tbody>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Номи</td>
-                                        <td>Тадбиркорлик субъектларига ёрдам кўрсатиш бўлимида бош мутахассис лавозими, &nbsp;</td>
+                                        <td>{{$vacancy->name}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Ташкилот: &nbsp;</td>
-                                        <td>Tехник жиҳатдан тартибга солиш, стандартлаштириш, сертификатлаштириш, ва метрология соҳасидаги қонунчилик талабларига риоя қилинишини таъминлаш Департаменти. &nbsp;</td>
+                                        <td>{{$vacancy->organ}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Чоп этилган сана: &nbsp;</td>
-                                        <td>2021-03-27</td>
+                                        <td>{{Carbon\Carbon::parse($vacancy->published_at)->format('d.m.Y') }}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Бўлим: &nbsp;</td>
-                                        <td>Тадбиркорлик субъектларига ёрдам кўрсатиш бўлими, &nbsp;</td>
+                                        <td>{{$vacancy->branch}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Маош: &nbsp;</td>
-                                        <td>1.790.000 &nbsp;</td>
+                                        <td>{{$vacancy->salary}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Мутахассислик: &nbsp;</td>
-                                        <td>Ходим Ўзбекистон Республикаси Президентининг “Техник жиҳатдан тартибга солиш, стандартлаштириш, сертификатлаштириш ва метрология тизимларини янада ривожлантириш чора-тадбирлари тўғрисида”ги 2018 йил 12 декабрдаги
-                                            ПҚ-4059-сон ҳамда Ўзбекистон Республикаси Вазирлар Маҳкамасининг 2019 йил 24 апрелдаги ВМ-348-сон қарорлари, бошқа&nbsp;&nbsp; қонун ва норматив ҳужжатларга асосланиб иш фаолиятини олиб боради. Техник
-                                            жиҳатдан тартибга солиш, стандартлаштириш, сертификатлаштириш ва метрология&nbsp; ҳамда АКТ соҳасида ҳам тажрибаси бўлиши лозим &nbsp;</td>
+                                        <td>{{$vacancy->specialty}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Талаб этиладиган иш тажрибаси: &nbsp;</td>
-                                        <td>3-5&nbsp; йил &nbsp;</td>
+                                        <td>{{$vacancy->experience}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Бандлик: &nbsp;</td>
-                                        <td>Тўлиқ: &nbsp;</td>
+                                        <td>{{$vacancy->employment}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Маълумоти: &nbsp;</td>
-                                        <td>Олий &nbsp;</td>
+                                        <td>{{$vacancy->information}}</td>
                                     </tr>
                                     <tr>
                                         <td class="has-text-align-left" data-align="left">Жинси: &nbsp;</td>
-                                        <td>&#8212;-</td>
+                                        <td>{{$vacancy->gender}}</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -76,7 +74,7 @@
                         </div>
 
                         <footer class="entry-meta" aria-label="Мета записи">
-                            <span class="cat-links"><span class="screen-reader-text">Рубрики </span><a href="https://depstan.uz/category/bosh-ish-orinlari/" rel="category tag">Бўш иш ўринлари</a></span>
+                            <span class="cat-links"><span class="screen-reader-text">Рубрики </span><a href="{{route('vacancy')}}" rel="category tag">Бўш иш ўринлари</a></span>
                             <nav id="nav-below" class="post-navigation"
                                  aria-label="Записи">
                             </nav>
