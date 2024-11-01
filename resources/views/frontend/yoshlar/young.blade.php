@@ -6,7 +6,7 @@
 @include('partials.header')
 
 <body class="archive category category-yoshlar-siyosati category-104 wp-custom-logo wp-embed-responsive post-image-below-header post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12"
-      itemtype="https://schema.org/Blog" itemscope>
+itemscope>
 <a class="screen-reader-text skip-link" href="#content" title="Перейти к содержимому">Перейти к содержимому</a>
 @include('partials.menu-header')
 @include('partials.menu')
@@ -34,13 +34,12 @@
                             </div>
                         </header>
                         <div class="post-image">
-
-                            <a href="{{route('young_show', $young->id)}}">
-                                <img style="border-radius: 5px" fetchpriority="high" width="1000" height="500"
-                                     src="{{ asset('storage/' . $young->image) }}"
-                                     class="attachment-full size-full wp-post-image" alt="" itemprop="image"
-                                     decoding="async" sizes="(max-width: 1000px) 100vw, 1000px"/>
-                            </a>
+{{--                            <a href="{{route('young_show', $young->id)}}">--}}
+{{--                                <img style="border-radius: 5px" fetchpriority="high" width="500" height="300"--}}
+{{--                                     src="{{ asset('storage/' . $young->image) }}"--}}
+{{--                                     class="attachment-full size-full wp-post-image" alt="" itemprop="image"--}}
+{{--                                     decoding="async" sizes="(max-width: 1000px) 100vw, 1000px"/>--}}
+{{--                            </a>--}}
                         </div>
                         <div class="entry-summary" itemprop="text">
                             <p>{{\Illuminate\Support\Str::words(strip_tags($young->content), 50)}}<a
