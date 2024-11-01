@@ -2,6 +2,7 @@
 <html lang="ru-RU">
 
 <title>Ёшлар сиёсати &#8212; TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 @include('partials.header')
 
 <body class="archive category category-yoshlar-siyosati category-104 wp-custom-logo wp-embed-responsive post-image-below-header post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12"
@@ -20,54 +21,44 @@
                         Ёшлар сиёсати </h1>
 
                 </header>
+                @foreach($youth as $young)
                 <article id="post-1177" class="post-1177 post type-post status-publish format-standard has-post-thumbnail hentry category-yoshlar-siyosati no-featured-image-padding" itemtype="https://schema.org/CreativeWork" itemscope>
                     <div class="inside-article">
                         <header class="entry-header">
-                            <h2 class="entry-title" itemprop="headline"><a href="{{route('young_show')}}" rel="bookmark">YOSHLARIMIZNING OʻZ OʻRNI BOR</a></h2>
+                            <h2 class="entry-title" itemprop="headline"><a href="{{route('young_show', $young->id)}}"
+                                                                           rel="bookmark">{{$young->title}}</a></h2>
                             <div class="entry-meta">
-                                <span class="posted-on"><time class="updated" datetime="2024-08-21T20:42:07+05:00" itemprop="dateModified">21.08.2024</time><time class="entry-date published" datetime="2020-10-07T09:36:11+05:00" itemprop="datePublished">07.10.2020</time></span>                                    </div>
+                                <span class="posted-on"><time class="entry-date published"
+                                                              datetime="2020-10-07T09:36:11+05:00"
+                                                              itemprop="datePublished">{{\Carbon\Carbon::parse($young->published_at)->format('d.m.Y')}}</time></span>
+                            </div>
                         </header>
                         <div class="post-image">
 
-                            <a href="https://depstan.uz/2020/10/07/yoshlarimizning-o%ca%bbz-o%ca%bbrni-bor/">
-                                <img fetchpriority="high" width="1000" height="541" src="https://depstan.uz/wp-content/uploads/2020/10/2053982.jpg" class="attachment-full size-full wp-post-image" alt="" itemprop="image" decoding="async" srcset="https://depstan.uz/wp-content/uploads/2020/10/2053982.jpg 1000w, https://depstan.uz/wp-content/uploads/2020/10/2053982-300x162.jpg 300w, https://depstan.uz/wp-content/uploads/2020/10/2053982-768x415.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" />
+                            <a href="{{route('young_show', $young->id)}}">
+                                <img style="border-radius: 5px" fetchpriority="high" width="1000" height="500"
+                                     src="{{ asset('storage/' . $young->image) }}"
+                                     class="attachment-full size-full wp-post-image" alt="" itemprop="image"
+                                     decoding="async" sizes="(max-width: 1000px) 100vw, 1000px"/>
                             </a>
                         </div>
                         <div class="entry-summary" itemprop="text">
-                            <p>Yoshlar har qanday jamiyatning harakatlantiruvchi kuchi, kelajagi, istiqboli kabi soʻzlar tagida ulkan maʼno yashiringan. Jamiyat oʻz yoshlari tarbiyasiga, mafkurayu-maʼnaviyatiga eʼtiborsiz boʻlsa, yaqin kelajakda har
-                                tomonlama inqirozga uchrashiga tarix takror va takror guvohlik bergan. Bu kabi muhim mavzularni chuqur va samarali tahlil qilish, ularni jahon miqyosida muhokama qilish uchun yuqori saviyada ilmiy maqolalar yaratish
-                                zarur boʻlib, &#8230; <a title="YOSHLARIMIZNING OʻZ OʻRNI BOR" class="read-more" href="https://depstan.uz/2020/10/07/yoshlarimizning-o%ca%bbz-o%ca%bbrni-bor/">Read more</a></p>
+                            <p>{{\Illuminate\Support\Str::words(strip_tags($young->content), 50)}}<a
+                                    title="{{$young->title}}" class="read-more"
+                                    href="{{route('young_show', $young->id)}}">Read more</a></p>
                         </div>
 
                         <footer class="entry-meta" aria-label="Мета записи">
-                            <span class="cat-links"><span class="screen-reader-text">Рубрики </span><a href="https://depstan.uz/category/yoshlar-siyosati/" rel="category tag">Yoshlar siyosati</a></span>
+                            <span class="cat-links"><span class="screen-reader-text">Рубрики </span><a
+                                    href="{{route('young')}}" rel="category tag">Yoshlar siyosati</a></span>
                         </footer>
                     </div>
                 </article>
-                <article id="post-1168" class="post-1168 post type-post status-publish format-standard has-post-thumbnail hentry category-yoshlar-siyosati no-featured-image-padding" itemtype="https://schema.org/CreativeWork" itemscope>
-                    <div class="inside-article">
-                        <header class="entry-header">
-                            <h2 class="entry-title" itemprop="headline"><a href="https://depstan.uz/2020/10/07/yoshlarimizning-oz-orni-bor/" rel="bookmark">ЁШЛАРИМИЗНИНГ ЎЗ ЎРНИ БОР</a></h2>
-                            <div class="entry-meta">
-                                <span class="posted-on"><time class="entry-date published" datetime="2020-10-07T09:27:22+05:00" itemprop="datePublished">07.10.2020</time></span> </div>
-                        </header>
-                        <div class="post-image">
+                @endforeach
 
-                            <a href="https://depstan.uz/2020/10/07/yoshlarimizning-oz-orni-bor/">
-                                <img width="1000" height="541" src="https://depstan.uz/wp-content/uploads/2020/10/2053982.jpg" class="attachment-full size-full wp-post-image" alt="" itemprop="image" decoding="async" srcset="https://depstan.uz/wp-content/uploads/2020/10/2053982.jpg 1000w, https://depstan.uz/wp-content/uploads/2020/10/2053982-300x162.jpg 300w, https://depstan.uz/wp-content/uploads/2020/10/2053982-768x415.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" />
-                            </a>
-                        </div>
-                        <div class="entry-summary" itemprop="text">
-                            <p>Ёшлар ҳар қандай жамиятнинг ҳаракатлантирувчи кучи, келажаги, истиқболи каби сўзлар тагида улкан маъно яширинган. Жамият ўз ёшлари тарбиясига, мафкураю-маънавиятига эътиборсиз бўлса, яқин келажакда ҳар томонлама инқирозга
-                                учрашига тарих такрор ва такрор гувоҳлик берган. Шу боис мамлакат раҳбарияти ёшларимиз тарбияси, соғлом бўлиб ўсиши, сифатли таълим олиши ва баркамол шахс бўлиб вояга етишини таъминлашга қаратилган кенг кўламли &#8230;
-                                <a title="ЁШЛАРИМИЗНИНГ ЎЗ ЎРНИ БОР" class="read-more" href="https://depstan.uz/2020/10/07/yoshlarimizning-oz-orni-bor/">Read more</a></p>
-                        </div>
-
-                        <footer class="entry-meta" aria-label="Мета записи">
-                            <span class="cat-links"><span class="screen-reader-text">Рубрики </span><a href="https://depstan.uz/category/yoshlar-siyosati/" rel="category tag">Ёшлар сиёсати</a></span>
-                        </footer>
-                    </div>
-                </article>
+                <div class="d-flex justify-content-start">
+                    {{ $youth->onEachSide(1)->links() }}
+                </div>
             </main>
         </div>
 

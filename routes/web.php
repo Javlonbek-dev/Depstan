@@ -12,6 +12,7 @@ use App\Http\Controllers\PresentationsController;
 use App\Http\Controllers\StateBudgetController;
 use App\Http\Controllers\VacancyController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\YoungController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -69,5 +70,5 @@ Route::get('/vacancy',[VacancyController::class, 'index'])->name('vacancy');
 Route::get('/vacancy_show/{id}',[VacancyController::class, 'show'])->name('vacancy_show');
 
 //Yoshlar siyosati
-Route::view('/young','frontend/yoshlar/young')->name('young');
-Route::view('/young_show','frontend/yoshlar/young_show')->name('young_show');
+Route::get('/young',[YoungController::class, 'index'])->name('young');
+Route::get('/young_show/{id}',[YoungController::class, 'show'])->name('young_show');

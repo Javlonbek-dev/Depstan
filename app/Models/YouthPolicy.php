@@ -16,6 +16,7 @@ class YouthPolicy extends Model
      */
     protected $fillable = [
         'title',
+        'image',
         'content',
         'published_at',
     ];
