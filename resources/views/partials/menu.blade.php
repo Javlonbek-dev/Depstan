@@ -153,6 +153,9 @@
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1106">
                     <a href="{{route('young')}}">Yoshlar siyosati</a>
                 </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1106">
+                    <a href="{{route('news')}}">Yangiliklar</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -305,6 +308,9 @@
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1106">
                     <a href="{{route('young')}}">Yoshlar siyosati</a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1106">
+                    <a href="{{route('news')}}">Yangiliklar</a>
                 </li>
             </ul>
         </div>

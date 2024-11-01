@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class NewsResource extends Resource
 {
@@ -26,13 +24,14 @@ class NewsResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('images')
-                    ->required(),
+                Forms\Components\FileUpload::make('images'),
                 Forms\Components\TextInput::make('file')
-                    ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('link'),
                 Forms\Components\DatePicker::make('published_at')
                     ->required(),
+                Forms\Components\RichEditor::make('content')
+                    ->fileAttachmentsDirectory('news/images')->columnSpanFull(),
             ]);
     }
 
@@ -42,8 +41,8 @@ class NewsResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('file')
-                    ->searchable(),
+                Tables\Columns\ImageColumn::make('image')
+                    ->circular(),
                 Tables\Columns\TextColumn::make('published_at')
                     ->date()
                     ->sortable(),
