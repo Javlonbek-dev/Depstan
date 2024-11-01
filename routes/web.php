@@ -7,6 +7,7 @@ use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\CorruptionController;
 use App\Http\Controllers\CorruptionTitleController;
 use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OpenDataController;
 use App\Http\Controllers\PresentationsController;
 use App\Http\Controllers\StateBudgetController;
@@ -72,3 +73,8 @@ Route::get('/vacancy_show/{id}', [VacancyController::class, 'show'])->name('vaca
 //Yoshlar siyosati
 Route::get('/young', [YoungController::class, 'index'])->name('young');
 Route::get('/young_show/{id}', [YoungController::class, 'show'])->name('young_show');
+
+//News
+Route::get('news', [NewsController::class, 'index'])->name('news');
+Route::get('news_show/{id}', [NewsController::class, 'show'])->name('news_show');
+Route::get('news_download/{id}', [NewsController::class, 'download'])->name('news_download');

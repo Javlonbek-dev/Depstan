@@ -18,6 +18,7 @@ class News extends Model
         'title',
         'images',
         'file',
+        'content',
         'published_at',
     ];
 

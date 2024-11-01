@@ -67,7 +67,7 @@
         </div>
         <div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
             <div class="inside-right-sidebar">
-                @include('partials.news')
+                @include('partials.news', ['news' => $news])
             </div>
         </div>
     </div>
