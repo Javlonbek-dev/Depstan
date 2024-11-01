@@ -26,8 +26,8 @@ Route::view('/higher_authority', 'frontend/inspeksiya_haqida/yuqori_organ')->nam
 Route::get('employee_info/{id}', [ManagerController::class, 'show'])->name('employee_info');
 
 //Hujjatlar
-Route::get('/approval_files', [ApprovalFileController::class,'index'])->name('approval_files');
-Route::get('/approval_files_download/{id}', [ApprovalFileController::class,'download'])->name('approval_files_download');
+Route::get('/approval_files', [ApprovalFileController::class, 'index'])->name('approval_files');
+Route::get('/approval_files_download/{id}', [ApprovalFileController::class, 'download'])->name('approval_files_download');
 Route::view('/decrees', 'frontend/hujjatlar/farmonlar')->name('decrees');
 Route::view('/weak_norm_documents', 'frontend/hujjatlar/kuchsiz_meyoriy_hujjatlar')->name('weak_norm_documents');
 Route::view('/standard_documents', 'frontend/hujjatlar/meyoriy_hujjatlar')->name('standard_documents');
@@ -57,18 +57,18 @@ Route::view('state_control', 'frontend/faoliyat/davlat_nazorat')->name('state_co
 Route::get('application_accept', [AcceptController::class, 'index'])->name('application_accept');
 
 //Xizmatlar
-Route::view('/export_help','frontend/xizmatlar/eksport')->name('export_help');
-Route::view('/citizens','frontend/xizmatlar/fuqarolar')->name('citizens');
-Route::view('/interactive_services','frontend/xizmatlar/interaktiv_xizmatlar')->name('interactive_services');
-Route::view('/consumption_help','frontend/xizmatlar/istemol_yordam')->name('consumption_help');
+Route::view('/export_help', 'frontend/xizmatlar/eksport')->name('export_help');
+Route::view('/citizens', 'frontend/xizmatlar/fuqarolar')->name('citizens');
+Route::view('/interactive_services', 'frontend/xizmatlar/interaktiv_xizmatlar')->name('interactive_services');
+Route::view('/consumption_help', 'frontend/xizmatlar/istemol_yordam')->name('consumption_help');
 Route::get('/open_data', [OpenDataController::class, 'index'])->name('open_data');
 Route::get('/open_data_download/{id}', [OpenDataController::class, 'download'])->name('open_data_download');
-Route::view('/complaint_application','frontend/xizmatlar/shikoyat_arizalar')->name('complaint_application');
+Route::view('/complaint_application', 'frontend/xizmatlar/shikoyat_arizalar')->name('complaint_application');
 
 //Vacancy
-Route::get('/vacancy',[VacancyController::class, 'index'])->name('vacancy');
-Route::get('/vacancy_show/{id}',[VacancyController::class, 'show'])->name('vacancy_show');
+Route::get('/vacancy', [VacancyController::class, 'index'])->name('vacancy');
+Route::get('/vacancy_show/{id}', [VacancyController::class, 'show'])->name('vacancy_show');
 
 //Yoshlar siyosati
-Route::get('/young',[YoungController::class, 'index'])->name('young');
-Route::get('/young_show/{id}',[YoungController::class, 'show'])->name('young_show');
+Route::get('/young', [YoungController::class, 'index'])->name('young');
+Route::get('/young_show/{id}', [YoungController::class, 'show'])->name('young_show');
