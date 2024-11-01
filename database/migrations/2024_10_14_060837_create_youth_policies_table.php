@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('youth_policies', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('image')->nullable();
             $table->longText('content');
             $table->date('published_at');
             $table->timestamps();
