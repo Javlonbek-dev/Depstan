@@ -12,6 +12,33 @@
                      alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"/>
             </a>
         </div>
+
+        <style>
+            .main-nav .menu li {
+                position: relative;
+            }
+
+            .main-nav .menu .sub-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #1E73BE;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px 0;
+            }
+
+            .main-nav .menu li:hover > .sub-menu,
+            .main-nav .menu li.active > .sub-menu {
+                display: block;
+            }
+
+            .dropdown-menu-toggle::before {
+                content: "▼";
+                margin-left: 5px;
+            }
+
+        </style>
         <div class="mobile-bar-items">
             <span class="search-item">
 				<a aria-label="Открыть строку поиска" href="#"></a>
@@ -183,7 +210,7 @@
                 </li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-521">
                     <a href="{{route('index')}}">
-                        Inspeksiya haqida<span role="presentation" class="dropdown-menu-toggle"></span>
+                        Inspeksiya haqida <span role="presentation" class="dropdown-menu-toggle"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-571">
@@ -316,3 +343,17 @@
         </div>
     </div>
 </nav>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdownToggles = document.querySelectorAll(".dropdown-menu-toggle");
+
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener("click", function(event) {
+                event.preventDefault();
+                const parentLi = toggle.closest("li");
+
+                parentLi.classList.toggle("active");
+            });
+        });
+    });
+</script>

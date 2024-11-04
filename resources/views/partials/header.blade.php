@@ -43,6 +43,7 @@
                 'resources/js/assets/webpack.runtime.min.js',
                 'resources/js/assets/pageviews.min.js',
 
+
               ])
     <meta name='robots' content='max-image-preview:large' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
