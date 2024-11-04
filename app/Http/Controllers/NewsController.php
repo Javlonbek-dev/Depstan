@@ -17,15 +17,15 @@ class NewsController extends Controller
         }
 
         $news = $query->paginate(10)->withQueryString();
-
-        return view('frontend.news.news', compact('news'));
+        $allNews = News::all();
+        return view('frontend.news.news', compact('news', 'allNews'));
     }
 
     public function show($id)
     {
-        $news = News::all();
+
         $new = News::findOrFail($id);
-        return view('frontend.news.news_show', compact('new', 'news'));
+        return view('frontend.news.news_show', ['news'=>$news, 'new'=>$new]);
     }
 
     public function download($id)
