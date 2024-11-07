@@ -7,6 +7,7 @@ use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\CorruptionController;
 use App\Http\Controllers\CorruptionTitleController;
 use App\Http\Controllers\GeneralInfoController;
+use App\Http\Controllers\HigherOrganController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OpenDataController;
@@ -24,7 +25,7 @@ Route::get('/general_information', [GeneralInfoController::class, 'index'])->nam
 Route::get('/management', [ManagerController::class, 'index'])->name('management');
 Route::view('/regional_department', 'frontend/inspeksiya_haqida/hududiy')->name('regional_department');
 Route::view('/structure', 'frontend/inspeksiya_haqida/tashkiliy_tuzilma')->name('structure');
-Route::view('/higher_authority', 'frontend/inspeksiya_haqida/yuqori_organ')->name('higher_authority');
+Route::get('/higher_authority', [HigherOrganController::class, 'index'])->name('higher_authority');
 Route::get('employee_info/{id}', [ManagerController::class, 'show'])->name('employee_info');
 
 //Hujjatlar
