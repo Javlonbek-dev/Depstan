@@ -30,7 +30,7 @@
                                                 <div class="elementor-element elementor-element-180ee8f8 elementor-widget elementor-widget-text-editor" data-id="180ee8f8" data-element_type="widget" data-widget_type="text-editor.default">
                                                     <div class="elementor-widget-container">
                                                        @foreach($generalInfo as $general)
-                                                           <p>{{$general->content}}</p>
+                                                           <p>{!! str_replace('http://localhost', config('app.url'), $general->content) !!}</p>
                                                        @endforeach
                                                     </div>
                                                 </div>
@@ -46,7 +46,7 @@
         </div>
         <div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
             <div class="inside-right-sidebar">
-                @include('partials.news' , ['allNews' =>$allNews]))
+                @include('partials.news')
             </div>
         </div>
     </div>

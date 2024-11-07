@@ -23,9 +23,9 @@ class GeneralInfoResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('content')
+                Forms\Components\RichEditor::make('content')
                     ->required()
-                    ->maxLength(255),
+                    ->columnSpanFull(),
             ]);
     }
 
