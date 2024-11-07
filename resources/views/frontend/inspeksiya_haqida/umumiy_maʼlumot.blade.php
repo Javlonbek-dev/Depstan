@@ -29,30 +29,9 @@
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-180ee8f8 elementor-widget elementor-widget-text-editor" data-id="180ee8f8" data-element_type="widget" data-widget_type="text-editor.default">
                                                     <div class="elementor-widget-container">
-                                                        <!-- wp:paragraph -->
-                                                        <p>
-                                                            Texnik jihatdan tartibga olish, standartlashtirish, sertifikatlashtirish va metrologiya sohalarida qonunchilik talablariga rioya qilinishini taʼminlash departamenti Oʻzbekiston Respublikasi Prezidentining 2018-yil 12-dekabrdagi “Texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya tizimlarini yana-da takomillashtirish chora-tadbirlari toʻgʻrisida”gi 4059-son qarori bilan tashkil etilgan boʻlib unga quyidagi vazifalar yuklatilgan. Bu kabi murakkab va texnik jihatdan chuqur tushuncha talab qiladigan mavzular bo &#8217;yicha yoziladigan maqolalar uchun zarur bo &#8217;lganda, siz
-                                                            <span style="color: #808080;">
-                                                                        <a style="color: #808080;" href="https://hausarbeit-schreiben.com/facharbeit-schreiben-lassen/">ghostwriter facharbeit</a>
-                                                                    </span>
-                                                            xizmatidan foydalanishingiz mumkin, bu xizmat sizga aniq va chuqur tahliliy materiallar yaratishda yordam beradi.
-                                                        </p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>a) texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya sohasida qonun hujjatlari buzilishi oldini olish va profilaktikasini amalga oshirish;</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>b) texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya masalalari boʻyicha tadbirkorlik subyektlariga har tomonlama koʻmaklashish;</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>v) texnik reglamentlar, standartlashtirishga doir normativ hujjatlar talablariga, oʻlchashlarning yagona birlikda boʻlishini va oʻlchashlarning toʻgʻriligini taʼminlash, majburiy sertifikatlashtirish qoidalariga rioya etish yuzasidan davlat nazoratini tashkil etish va amalga oshirish;</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>g) texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya sohasida huquqbuzarliklarni aniqlash yuzasidan komleks chora-tadbirlarni amalga oshirish va ularni keltirib chiqarishga asos boʻluvchi sabab va sharoitlarni bartaraf etish choralarini koʻrish.</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Departament oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasiga va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga va boshqa qonun hujjatlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasi Vazirlar Mahkamasining qarorlariga va farmoyishlariga shuningdek, oʻz Nizomi va “Oʻzstandart” agentligi topshiriqlari va boshqa qonunchilik hujjatlariga amal qiladi.</p>
-                                                        <!-- /wp:paragraph -->
+                                                       @foreach($generalInfo as $general)
+                                                           <p>{!! str_replace('http://localhost', config('app.url'), $general->content) !!}</p>
+                                                       @endforeach
                                                     </div>
                                                 </div>
                                             </div>
@@ -67,7 +46,7 @@
         </div>
         <div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
             <div class="inside-right-sidebar">
-                @include('partials.news', ['news' => $news])
+                @include('partials.news')
             </div>
         </div>
     </div>

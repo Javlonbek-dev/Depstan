@@ -2,18 +2,20 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\NewsResource\Pages;
-use App\Filament\Resources\NewsResource\RelationManagers;
-use App\Models\News;
+use App\Filament\Resources\GeneralInfoResource\Pages;
+use App\Filament\Resources\GeneralInfoResource\RelationManagers;
+use App\Models\GeneralInfo;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class NewsResource extends Resource
+class GeneralInfoResource extends Resource
 {
-    protected static ?string $model = News::class;
+    protected static ?string $model = GeneralInfo::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -21,16 +23,9 @@ class NewsResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('title')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\FileUpload::make('images'),
-                Forms\Components\FileUpload::make('file'),
-                Forms\Components\TextInput::make('link'),
-                Forms\Components\DatePicker::make('published_at')
-                    ->required(),
                 Forms\Components\RichEditor::make('content')
-                    ->fileAttachmentsDirectory('news/images')->columnSpanFull(),
+                    ->required()
+                    ->columnSpanFull(),
             ]);
     }
 
@@ -38,13 +33,8 @@ class NewsResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('title')
+                Tables\Columns\TextColumn::make('content')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image')
-                    ->circular(),
-                Tables\Columns\TextColumn::make('published_at')
-                    ->date()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -77,9 +67,9 @@ class NewsResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListNews::route('/'),
-            'create' => Pages\CreateNews::route('/create'),
-            'edit' => Pages\EditNews::route('/{record}/edit'),
+            'index' => Pages\ListGeneralInfos::route('/'),
+            'create' => Pages\CreateGeneralInfo::route('/create'),
+            'edit' => Pages\EditGeneralInfo::route('/{record}/edit'),
         ];
     }
 }

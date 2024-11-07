@@ -6,6 +6,7 @@ use App\Http\Controllers\AnalyticalController;
 use App\Http\Controllers\ApprovalFileController;
 use App\Http\Controllers\CorruptionController;
 use App\Http\Controllers\CorruptionTitleController;
+use App\Http\Controllers\GeneralInfoController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OpenDataController;
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'frontend/index')->name('index');
 //Inspekisya haqida
-Route::view('/general_information', 'frontend/inspeksiya_haqida/umumiy_maʼlumot')->name('general_information');
+Route::get('/general_information', [GeneralInfoController::class, 'index'])->name('general_information');
 Route::get('/management', [ManagerController::class, 'index'])->name('management');
 Route::view('/regional_department', 'frontend/inspeksiya_haqida/hududiy')->name('regional_department');
 Route::view('/structure', 'frontend/inspeksiya_haqida/tashkiliy_tuzilma')->name('structure');
