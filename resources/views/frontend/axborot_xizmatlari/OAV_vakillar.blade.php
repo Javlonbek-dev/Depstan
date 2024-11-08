@@ -30,39 +30,9 @@
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-6955329c elementor-widget elementor-widget-text-editor" data-id="6955329c" data-element_type="widget" data-widget_type="text-editor.default">
                                                     <div class="elementor-widget-container">
-                                                        <!-- wp:paragraph -->
-                                                        <p>Departamentda ommaviy axborot vositalari vakillarini akkreditatsiya qilish Oʻzbekiston Respublikasi Vazirlar Mahkamasining 2006-yil 23-noyabrdagi 243-sonli qarori bilan tasdiqlangan “Oʻzbekiston
-                                                            Respublikasi ommaviy axborot vositalari vakillarini davlat hokimiyati organlari huzurida akkreditatsiya qilish tartibi toʻgʻrisida”gi Nizomga muvofiq amalga oshiriladi. Bu kabi qonunchilik
-                                                            asosidagi jarayonlar va boshqa ilmiy-tadqiqot ishlarini tayyorlashda talabalar va tadqiqotchilar uchun <span style="color: #808080;"><a style="color: #808080;" href="https://hausarbeit-ghostwriter.com/">hausarbeiten schreiben lassen</a></span>                                                                xizmati mavjud boʻlib, bu xizmat ilmiy ishlar yozishning samarali va moliyaviy jihatdan ham qulay usulini taqdim etadi.</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>OAV vakillari Departamentda akkreditatsiyadan oʻtishlari uchun tahririyatning rasmiy blankida bosh muharrir tomonidan imzolangan va muhr bilan tasdiqlangan buyurtma berishlari lozim. Buyurtmada
-                                                            quyidagilar koʻrsatilishi shart:</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>OAV nomi va turi</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Yoʻnalishi</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Maʼlumotlarni tarqatish geografiyasi</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>elektron pochta manzili</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Tahririyat telefon va faks raqamlari</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Yuborilayotgan vakil(lar)ning familiya, ismi va otasining ismi</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Oʻz vazifalarini bajarishda qoʻllaniladigan uskunalar roʻyxati.</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Buyurtmaga shuningdek, muxbirning xizmat vazifasi, pasport maʼlumotlari, diplom nusxalari, elektron manzili, telefon raqamlari vabelgilangan shakldagi 4 ta fotosurat ilova qilinishi kerak.</p>
-                                                        <!-- /wp:paragraph -->
+                                                        @foreach($media as $m)
+                                                            <p>{!! str_replace('http://localhost',  config('app.url'),  $m->content) !!}</p>
+                                                        @endforeach
                                                     </div>
                                                 </div>
                                             </div>

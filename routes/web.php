@@ -9,6 +9,7 @@ use App\Http\Controllers\CorruptionTitleController;
 use App\Http\Controllers\GeneralInfoController;
 use App\Http\Controllers\HigherOrganController;
 use App\Http\Controllers\ManagerController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OpenDataController;
 use App\Http\Controllers\PresentationsController;
@@ -45,7 +46,7 @@ Route::get('/ads_tenders', [AdvertisementController::class, 'index'])->name('ads
 Route::get('/ads_tenders_download/{id}', [AdvertisementController::class, 'download'])->name('ads_tenders_download');
 Route::view('/photo_gallery', 'frontend/axborot_xizmatlari/foto_galereya')->name('photo_gallery');
 Route::view('/publications', 'frontend/axborot_xizmatlari/nashrlar')->name('publications');
-Route::view('/media_representatives', 'frontend/axborot_xizmatlari/OAV_vakillar')->name('media_representatives');
+Route::get('/media_representatives', [MediaController::class, 'index'] )->name('media_representatives');
 Route::get('/press_release', [PressRelizController::class, 'index'])->name('press_release');
 Route::get('/presentations', [PresentationsController::class, 'index'])->name('presentations');
 Route::get('/presentations_download/{id}', [PresentationsController::class, 'download'])->name('presentations_download');
