@@ -16,6 +16,7 @@ use App\Http\Controllers\PresentationsController;
 use App\Http\Controllers\PressRelizController;
 use App\Http\Controllers\PublicationController;
 use App\Http\Controllers\StateBudgetController;
+use App\Http\Controllers\StateControlController;
 use App\Http\Controllers\VacancyController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\YoungController;
@@ -59,7 +60,7 @@ Route::get('/analytical_data_show/{id}', [AnalyticalController::class, 'show'])-
 //Faoliyat
 Route::get('corruption', [CorruptionTitleController::class, 'index'])->name('corruption');
 Route::get('/corruptions/download/{id}', [CorruptionController::class, 'download'])->name('corruptions.download');
-Route::view('state_control', 'frontend/faoliyat/davlat_nazorat')->name('state_control');
+Route::get('state_control', [StateControlController::class, 'index'])->name('state_control');
 Route::get('application_accept', [AcceptController::class, 'index'])->name('application_accept');
 
 //Xizmatlar
