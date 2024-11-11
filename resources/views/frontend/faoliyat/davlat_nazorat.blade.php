@@ -31,27 +31,9 @@
                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                 <div class="elementor-element elementor-element-6c6c4653 elementor-widget elementor-widget-text-editor" data-id="6c6c4653" data-element_type="widget" data-widget_type="text-editor.default">
                                                     <div class="elementor-widget-container">
-                                                        <!-- wp:paragraph -->
-                                                        <p>Departament texnik jihatdan tartibga solish, standartlashtirish, sertifikatlashtirish va metrologiya sohalarida qonuniy talablarga va normativ-huquqiy hujjatlarga, texnik reglamentlarga, standartlashtirishga
-                                                            doir normativ hujjatlarga, oʻlchashlarning yagona birlikda boʻlishi va toʻgʻriligini taʼminlash, majburiy sertifikatlashtirish qoidalariga rioya etish boʻyicha davlat nazoratini amalga oshiradi.
-                                                            Bu jarayonlarning murakkabligi va aniq talablari tufayli, agar siz oʻz sohangizdagi professional hujjatlarni, hisobotlarni yoki boshqa muhim materiallarni yuqori saviyada tayyorlashga ehtiyoj
-                                                            sezgan boʻlsangiz, <span style="color: #808080;"><a style="color: #808080;" href="http://ghostwriting-agentur.com/">ghostwriting</a></span> xizmatidan foydalanishingiz mumkin. Bu xizmat sizga
-                                                            turli mavzularda yuqori sifatli matnlar yaratish orqali yordam beradi, bu esa sizning ishingiz samaradorligini oshirishga yordam beradi.</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Davlat nazorati Departament davlat inspektorlari tomonidan qonunchilikda belgilangan shartlarda hamda tartibda amalga oshiriladi.</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Departamentning davlat inspektorlari oliy maʼlumotga ega boʻlishlari va “Oʻzstandart” agentligi tomonidan majburiy attestatsiyadan belgilangan tartibda oʻtishlari kerak.</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Davlat nazoratini amalga oshiruvchi davlat inspektorlari davlat boshqaruvi organlari vakillari hisoblanadi, davlat ximoyasida va joylardagi davlat boshqaruvi organlaridan mustaqil boʻladi hamda
-                                                            bevosita Departamentga boʻysinadilar.</p>
-                                                        <!-- /wp:paragraph -->
-                                                        <!-- wp:paragraph -->
-                                                        <p>Departamentning oʻz vakolati doirasiga taalluqli boʻlgan masalalar yuzasidan qabul qilinadigan va oʻrnatilgan tartibda qabul qilingan qarorlari, mulkchilik shaklidan va idoraviy mansubligidan
-                                                            qatʼi nazar, xoʻjalik va tadbirkorlik faoliyati subyektlari tomonidan bajarilishi majburiydir.</p>
-                                                        <!-- /wp:paragraph -->
+                                                      @foreach($states as $state)
+                                                            <p>{!! str_replace('http://localhost',  config('app.url'),  $state->content) !!}</p>
+                                                      @endforeach
                                                     </div>
                                                 </div>
                                             </div>
