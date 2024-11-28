@@ -40,7 +40,7 @@ export default defineConfig({
                 //js
                 'resources/js/assets/core.min.js',
                 'resources/js/assets/frontend.min.js',
-                'resources/js/assets/frontend-modules.min.js',
+                // 'resources/js/assets/frontend-modules.min.js',
                 'resources/js/assets/menu.min.js',
                 'resources/js/assets/navigation-search.min.js',
                 'resources/js/assets/sticky.min.js',
