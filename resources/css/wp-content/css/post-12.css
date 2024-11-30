@@ -30,8 +30,6 @@
     --container-max-width: 1322px;
 }
 
-{}
-
 h1.entry-title {
     display: var(--page-title-display);
 }
