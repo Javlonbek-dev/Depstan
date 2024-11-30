@@ -51,4 +51,11 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        host: '0.0.0.0', // Make the server accessible from your network
+        port: 5173, // Optional: Change the port if needed
+        hmr: {
+            host: '95.46.96.172', // Replace with your server's IP address
+        },
+    },
 });
