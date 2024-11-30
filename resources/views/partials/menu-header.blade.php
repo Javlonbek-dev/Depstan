@@ -5,7 +5,7 @@
                 <a href="{{route('index')}}" rel="home">
                     <img class="header-image is-logo-image"
                          alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"
-                         src="{{ Vite::asset('resources/images/LOGO.svg') }}">
+                         src="../../images/LOGO.svg">
                 </a>
             </div>
             <div class="site-branding">
