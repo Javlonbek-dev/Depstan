@@ -1,4 +1,4 @@
-<header class="site-header" id="masthead" aria-label="Сайт" itemtype="https://schema.org/WPHeader" itemscope>
+<header class="site-header" id="masthead" aria-label="Сайт"  itemscope>
     <div class="inside-header grid-container grid-parent">
         <div class="site-branding-container">
             <div class="site-logo">
