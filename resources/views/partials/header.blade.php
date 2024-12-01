@@ -1218,11 +1218,11 @@
             }
         }
     </style>
-{{--    <img src="{{ Vite::asset('resources/images/3.png') }}" alt="Image">--}}
-{{--    <link rel="icon" href="{{ Vite::asset('resources/images/4.png') }}" sizes="192x192"/>--}}
-{{--    <link rel="apple-touch-icon" href="{{ Vite::asset('resources/images/5.png') }}"/>--}}
+    <img src="{{asset('resources/images/3.png') }}" alt="Image">
+    <link rel="icon" href="{{asset('resources/images/4.png') }}" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="{{asset('resources/images/5.png') }}"/>
     <meta name="msapplication-TileImage"
-{{--          content="{{ Vite::asset('resources/images/6.png') }}"--}}
+          content="{{asset('resources/images/6.png') }}"
     />
     <style id="wp-custom-css">
         .menu-item-1093 {
