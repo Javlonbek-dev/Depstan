@@ -5,7 +5,6 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\NewsResource\Pages;
 use App\Filament\Resources\NewsResource\RelationManagers;
 use App\Models\News;
-use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -25,7 +24,8 @@ class NewsResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\FileUpload::make('images'),
+                Forms\Components\FileUpload::make('images')
+                    ->multiple(),
                 Forms\Components\FileUpload::make('file'),
                 Forms\Components\TextInput::make('link'),
                 Forms\Components\DatePicker::make('published_at')

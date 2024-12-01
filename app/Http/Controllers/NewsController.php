@@ -23,9 +23,8 @@ class NewsController extends Controller
 
     public function show($id)
     {
-
         $new = News::findOrFail($id);
-        return view('frontend.news.news_show', ['news'=>$news, 'new'=>$new]);
+        return view('frontend.news.news_show', ['new' => $new]);
     }
 
     public function download($id)

@@ -10,8 +10,6 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class GeneralInfoResource extends Resource
 {
@@ -33,8 +31,12 @@ class GeneralInfoResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('content')
+                Tables\Columns\TextColumn::make('id')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('content')
+                    ->searchable()
+                    ->html()
+                    ->limit(150),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
