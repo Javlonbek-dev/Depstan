@@ -8,7 +8,7 @@
         <div class="site-logo mobile-header-logo">
             <a href="{{route('index')}}" title="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"
                rel="home">
-                <img src="{{ Vite::asset('resources/images/LOGO.svg') }}"
+                <img src="{{ asset('resources/images/LOGO.svg') }}"
                      alt="TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI"/>
             </a>
         </div>
