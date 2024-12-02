@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 
+<style>
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Har bir qator uchun 3 ustun */
+        gap: 16px;  /* Rasm orasidagi bo'shliq */
+    }
+
+    .img-small {
+        width: 100%;     /* Rasmning kengligi 100% bo'lsin */
+        height: auto;    /* O'zboshimchalik bilan balandligi bo'lsin */
+        border-radius: 8px;  /* Rasmlar burchaklarini yumshatish (ixtiyoriy) */
+    }
+
+</style>
 <title>{{$new->title}}. &#8212; TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
@@ -18,7 +32,17 @@
                 <article id="post-2709" class="post-2709 post type-post status-publish format-standard has-post-thumbnail hentry category-yangiliklar" itemtype="https://schema.org/CreativeWork" itemscope>
                     <div class="inside-article">
                         <div class="featured-image  page-header-image-single ">
-                            <img fetchpriority="high" width="1280" height="1047" src="{{asset('storage/'. $new->images)}}" class="attachment-full size-full" alt="" itemprop="image" decoding="async" sizes="(max-width: 1280px) 100vw, 1280px" />
+                            <div class="image-gallery">
+                                @foreach($new->images as $image)
+                                    <img fetchpriority="high"
+                                         src="{{ asset('storage/' . $image) }}"
+                                         class="attachment-full size-full img-small" alt="" itemprop="image" decoding="async"
+                                         sizes="(max-width: 640px) 100vw, 640px" />
+                                @endforeach
+                            </div>
+
+
+
                         </div>
                         <header class="entry-header">
                             <h1 class="entry-title" itemprop="headline">{{$new->title}}</h1>

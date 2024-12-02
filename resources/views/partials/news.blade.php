@@ -3,7 +3,7 @@
     <ul>
         @foreach($allNews as $new)
             <li>
-                <a href="{{route('news', $new->id)}}">{{$new->title}}</a>
+                <a href="{{route('news_show', $new->id)}}">{{$new->title}}</a>
             </li>
         @endforeach
     </ul>
