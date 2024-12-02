@@ -26,7 +26,9 @@ class NewsResource extends Resource
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('images')
                     ->multiple(),
-                Forms\Components\FileUpload::make('file'),
+                Forms\Components\FileUpload::make('file')
+                    ->disk('public')
+                    ->directory('news'),
                 Forms\Components\TextInput::make('link'),
                 Forms\Components\DatePicker::make('published_at')
                     ->required(),
