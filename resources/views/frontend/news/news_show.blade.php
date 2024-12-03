@@ -40,12 +40,15 @@
                                          sizes="(max-width: 640px) 100vw, 640px" />
                                 @endforeach
                             </div>
-
-
-
                         </div>
                         <header class="entry-header">
                             <h1 class="entry-title" itemprop="headline">{{$new->title}}</h1>
+                            @if($new->file || $new->link)
+                                <div class="download-file">
+                                    <a href="{{ route('news_download', $new->id) }}" class="btn btn-primary">Yukla olish
+                                    </a>
+                                </div>
+                            @endif
                             <div class="entry-meta">
                                 <span class="posted-on"><time class="entry-date published"  itemprop="datePublished">{{Carbon\Carbon::parse($new->published_at)->format('d.m.Y') }}</time></span> </div>
                         </header>

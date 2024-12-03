@@ -26,6 +26,7 @@ class NewsResource extends Resource
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('images')
                     ->multiple(),
+                Forms\Components\TextInput::make('file_name'),
                 Forms\Components\FileUpload::make('file')
                     ->disk('public')
                     ->directory('news'),

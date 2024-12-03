@@ -24,19 +24,22 @@ class NewsController extends Controller
     public function show($id)
     {
         $new = News::findOrFail($id);
+        $new->file_name = str_replace(['/', '\\'], '-', $new->file_name);
         return view('frontend.news.news_show', ['new' => $new]);
     }
 
     public function download($id)
     {
         $file = News::findOrFail($id);
-        if ($file->file && Storage::disk('public')->exists('' . $file->file)) {
-            return response()->download(storage_path('app/public/' . $file->file), $file->file);
+
+        if ($file->file && Storage::disk('public')->exists($file->file)) {
+            $safeFilename = basename($file->file);
+            return response()->download(storage_path('app/public/' . $file->file), $safeFilename);
         } elseif ($file->link) {
             return redirect()->away($file->link);
         } else {
             return redirect()->back()->with('error', 'File or link not found.');
         }
-
     }
+
 }
