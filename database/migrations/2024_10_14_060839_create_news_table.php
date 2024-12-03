@@ -18,6 +18,7 @@ return new class extends Migration
             $table->longText('content')->nullable();
             $table->string('link')->nullable();
             $table->string('file')->nullable();
+            $table->string('file_name')->nullable();
             $table->date('published_at');
             $table->timestamps();
         });
