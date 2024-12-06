@@ -24,11 +24,10 @@ class NewsController extends Controller
     public function show($id)
     {
         $new = News::findOrFail($id);
-        $link= $new->link;
         $file_name_files = is_string($new->file_name_file)
             ? json_decode($new->file_name_file, true)
             : $new->file_name_file;
-        return view('frontend.news.news_show', ['new' => $new], ['file_name_files' => $file_name_files, 'link' => $link]);
+        return view('frontend.news.news_show', ['new' => $new], ['file_name_files' => $file_name_files]);
     }
 
     public function download($id, Request $request)

@@ -34,10 +34,9 @@ class NewsResource extends Resource
                 Repeater::make('file_name_file')
                     ->schema([
                         Forms\Components\TextInput::make('file_name')
-                            ->required()->label('File nomi '),
+                            ->label('File nomi '),
                         Forms\Components\FileUpload::make('file')
                             ->label('Yuklanadigan fayl')
-                            ->required(),
                     ]),
                 Forms\Components\RichEditor::make('content')
                     ->fileAttachmentsDirectory('news/images')->columnSpanFull(),
