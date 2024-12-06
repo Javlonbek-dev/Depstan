@@ -51,6 +51,16 @@
                         </header>
 
                         <div class="entry-content" itemprop="text">
+                            <iframe
+                                title="{{ $new->title }}"
+                                width="991"
+                                height="743"
+                                src="{{ str_replace('watch?v=', 'embed/', $new->link) }}"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+
+
                             <p>{!! str_replace('http://localhost', config('app.url'), $new->content) !!}</p>
                         </div>
                         <div class="entry-meta">
