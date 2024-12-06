@@ -4,14 +4,14 @@
 <style>
     .image-gallery {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Har bir qator uchun 3 ustun */
-        gap: 16px;  /* Rasm orasidagi bo'shliq */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
 
     .img-small {
-        width: 100%;     /* Rasmning kengligi 100% bo'lsin */
-        height: auto;    /* O'zboshimchalik bilan balandligi bo'lsin */
-        border-radius: 8px;  /* Rasmlar burchaklarini yumshatish (ixtiyoriy) */
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
 
 </style>
@@ -42,19 +42,20 @@
                             </div>
                         </div>
                         <header class="entry-header">
-                            <h1 class="entry-title" itemprop="headline">{{$new->title}}</h1>
-                            @if($new->file || $new->link)
-                                <div class="download-file">
-                                    <a href="{{ route('news_download', $new->id) }}" class="btn btn-primary">Yukla olish
-                                    </a>
+                            <h1 class="entry-title" style="padding-bottom: 20px" itemprop="headline">{{$new->title}}</h1>
+                            @foreach ($file_name_files as $file)
+                                <div>
+                                    <a href="{{ route('news.download', ['id' => $new->id, 'file' => $file['file']]) }}" class="btn btn-primary">{{ $file['file_name'] }}</a>
                                 </div>
-                            @endif
-                            <div class="entry-meta">
-                                <span class="posted-on"><time class="entry-date published"  itemprop="datePublished">{{Carbon\Carbon::parse($new->published_at)->format('d.m.Y') }}</time></span> </div>
+                            @endforeach
                         </header>
 
                         <div class="entry-content" itemprop="text">
                             <p>{!! str_replace('http://localhost', config('app.url'), $new->content) !!}</p>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="posted-on"><time style="font-size: 15px" class="entry-date published"  itemprop="datePublished">{{Carbon\Carbon::parse($new->published_at)->format('d.m.Y') }}</time>
+                            </span>
                         </div>
 
                         <footer class="entry-meta" aria-label="Мета записи">

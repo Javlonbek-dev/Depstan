@@ -9,15 +9,10 @@ class News extends Model
 {
     use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
         'title',
         'images',
-        'file',
+        'file_name_file',
         'content',
         'published_at',
     ];
@@ -30,6 +25,7 @@ class News extends Model
     protected $casts = [
         'id' => 'integer',
         'images' => 'array',
+        'file_name_file' => 'array',
         'published_at' => 'date',
     ];
 }

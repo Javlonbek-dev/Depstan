@@ -6,6 +6,7 @@ use App\Filament\Resources\NewsResource\Pages;
 use App\Filament\Resources\NewsResource\RelationManagers;
 use App\Models\News;
 use Filament\Forms;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -25,17 +26,22 @@ class NewsResource extends Resource
                     ->required()
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('images')
-                    ->multiple(),
-                Forms\Components\TextInput::make('file_name'),
-                Forms\Components\FileUpload::make('file')
-                    ->disk('public')
-                    ->directory('news'),
-                Forms\Components\TextInput::make('link'),
-                Forms\Components\DatePicker::make('published_at')
+                    ->multiple()
+                    ->label('Rasmlar'),
+                Forms\Components\TextInput::make('link')->label('Havola'),
+                Forms\Components\DatePicker::make('published_at')->label("Nashr etilgan sanasi")
                     ->required(),
+                Repeater::make('file_name_file')
+                    ->schema([
+                        Forms\Components\TextInput::make('file_name')
+                            ->required()->label('File nomi '),
+                        Forms\Components\FileUpload::make('file')
+                            ->label('Yuklanadigan fayl')
+                            ->required(),
+                    ]),
                 Forms\Components\RichEditor::make('content')
                     ->fileAttachmentsDirectory('news/images')->columnSpanFull(),
-            ]);
+            ])->columns(1);
     }
 
     public static function table(Table $table): Table

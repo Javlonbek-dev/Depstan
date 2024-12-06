@@ -83,4 +83,4 @@ Route::get('/young_show/{id}', [YoungController::class, 'show'])->name('young_sh
 //News
 Route::get('news', [NewsController::class, 'index'])->name('news');
 Route::get('news_show/{id}', [NewsController::class, 'show'])->name('news_show');
-Route::get('news_download/{id}', [NewsController::class, 'download'])->name('news_download');
+Route::get('/news/{id}/download', [NewsController::class, 'download'])->name('news.download');

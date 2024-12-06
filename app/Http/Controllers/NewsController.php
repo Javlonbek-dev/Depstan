@@ -24,22 +24,25 @@ class NewsController extends Controller
     public function show($id)
     {
         $new = News::findOrFail($id);
-        $new->file_name = str_replace(['/', '\\'], '-', $new->file_name);
-        return view('frontend.news.news_show', ['new' => $new]);
+        $link= $new->link;
+        $file_name_files = is_string($new->file_name_file)
+            ? json_decode($new->file_name_file, true)
+            : $new->file_name_file;
+        return view('frontend.news.news_show', ['new' => $new], ['file_name_files' => $file_name_files, 'link' => $link]);
     }
 
-    public function download($id)
+    public function download($id, Request $request)
     {
         $file = News::findOrFail($id);
+        $requestedFile = $request->get('file');
 
-        if ($file->file && Storage::disk('public')->exists($file->file)) {
-            $safeFilename = basename($file->file);
-            return response()->download(storage_path('app/public/' . $file->file), $safeFilename);
-        } elseif ($file->link) {
-            return redirect()->away($file->link);
-        } else {
-            return redirect()->back()->with('error', 'File or link not found.');
+        if ($requestedFile && Storage::disk('public')->exists($requestedFile)) {
+            $safeFilename = basename($requestedFile);
+            return response()->download(storage_path('app/public/' . $requestedFile), $safeFilename);
         }
+
+        return redirect()->back()->with('error', 'Fayl topilmadi.');
     }
+
 
 }
