@@ -18,9 +18,7 @@ class Analytical extends Model
     protected $fillable = [
         'title',
         'published_at',
-        'image',
         'text',
-        'editor'
     ];
 
     /**
