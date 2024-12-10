@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->date('published_at');
-            $table->json('image');
+            $table->json('image')->nullable();
             $table->longText('text');
             $table->string('editor')->nullable();
             $table->timestamps();
