@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('published_at');
             $table->json('image');
             $table->longText('text');
-            $table->string('editor');
+            $table->string('editor')->nullable();
             $table->timestamps();
         });
     }

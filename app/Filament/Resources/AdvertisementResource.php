@@ -28,8 +28,7 @@ class AdvertisementResource extends Resource
                 Forms\Components\FileUpload::make('file')
                     ->required(),
                 Forms\Components\DatePicker::make('published_at')
-                    ->label('Nashr qilingan vaqti ')
-                    ->required(),
+                    ->label('Nashr qilingan vaqti '),
             ]);
     }
 

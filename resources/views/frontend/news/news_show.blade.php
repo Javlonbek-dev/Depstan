@@ -66,16 +66,16 @@
                         </header>
 
                         <div class="entry-content" itemprop="text">
-                            <iframe
-                                title="{{ $new->title }}"
-                                width="991"
-                                height="743"
-                                src="{{ str_replace('watch?v=', 'embed/', $new->link) }}"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-
-
+                            <figure
+                                class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+                                <div class="wp-block-embed__wrapper">
+                                    @php
+                                        $embedLink = str_replace('youtu.be/', 'www.youtube.com/embed/', $new->link);
+                                    @endphp
+                                    <iframe style="border-radius: 10px" title="{{$new->content}}" width="991"
+                                            height="557" src="{{ $embedLink }}"></iframe>
+                                </div>
+                            </figure>
                             <p>{!! str_replace('http://localhost', config('app.url'), $new->content) !!}</p>
                         </div>
                         <div class="entry-meta">
