@@ -27,11 +27,15 @@
                                 <div class="entry-meta">
                                     <span class="posted-on"><time class="entry-date published" datetime="2020-04-24T13:22:48+05:00" itemprop="datePublished">{{Carbon\Carbon::parse($analytic->published_at)->format('d.m.Y') }}</time></span> </div>
                             </header>
+                            @if(!$analytic->image == null)
                             <div class="post-image">
                                 <a href="{{route('analytical_data_show', $analytic->id)}}">
                                     <img fetchpriority="high" width="1500" height="800" src="{{asset('storage/' . $analytic->image )}}" class="attachment-full size-full wp-post-image" alt="" itemprop="image" decoding="async" sizes="(max-width: 1500px) 100vw, 1500px" />
                                 </a>
                             </div>
+                            @else
+                            @endif
+
                             <div class="entry-summary" itemprop="text">
                                 <p>{{\Illuminate\Support\Str::words(strip_tags($analytic->text),30)}}<a title="{{$analytic->title}}" class="read-more" href="{{route('analytical_data_show', $analytic->id)}}">Read more</a></p>
                             </div>
