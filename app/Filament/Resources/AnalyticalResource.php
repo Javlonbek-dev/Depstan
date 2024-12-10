@@ -27,8 +27,7 @@ class AnalyticalResource extends Resource
                 Forms\Components\DatePicker::make('published_at')
                     ->required(),
                 Forms\Components\FileUpload::make('image')
-                    ->image()
-                    ->required(),
+                    ->image(),
                 Forms\Components\RichEditor::make('text')
                     ->required()
                     ->fileAttachmentsDirectory('analytics/images')->columnSpanFull(),
