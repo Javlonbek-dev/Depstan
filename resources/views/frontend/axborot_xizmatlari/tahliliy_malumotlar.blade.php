@@ -23,7 +23,11 @@
                     <article id="post-983" class="post-983 post type-post status-publish format-standard has-post-thumbnail hentry category-tahliliy-malumotlar no-featured-image-padding" itemtype="https://schema.org/CreativeWork" itemscope>
                         <div class="inside-article">
                             <header class="entry-header">
-                                <h2 class="entry-title" itemprop="headline"><a href="{{route('analytical_data_show', $analytic->id)}}" rel="bookmark">{{$analytic->title}}</a></h2>
+                                <h2 class="entry-title" itemprop="headline" style="text-transform: uppercase;">
+                                    <a href="{{ route('analytical_data_show', $analytic->id) }}" rel="bookmark">
+                                        {{ $analytic->title }}
+                                    </a>
+                                </h2>
                                 <div class="entry-meta">
                                     <span class="posted-on"><time class="entry-date published" datetime="2020-04-24T13:22:48+05:00" itemprop="datePublished">{{Carbon\Carbon::parse($analytic->published_at)->format('d.m.Y') }}</time></span> </div>
                             </header>
