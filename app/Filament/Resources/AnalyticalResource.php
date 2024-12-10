@@ -33,7 +33,6 @@ class AnalyticalResource extends Resource
                     ->required()
                     ->fileAttachmentsDirectory('analytics/images')->columnSpanFull(),
                 Forms\Components\TextInput::make('editor')
-                    ->required()
             ]);
     }
 
