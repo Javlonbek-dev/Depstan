@@ -6,6 +6,49 @@
 
 @include('partials.header')
 <style>
+    @media (max-width: 768px) {
+        .news-item {
+            flex-direction: column; /* Rasm tepada, matn ostida */
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .news-image {
+            width: 100%; /* Rasm butun ekran bo‘ylab */
+            height: auto;
+            text-align: center;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: auto;
+            max-height: 250px; /* Juda katta bo‘lib ketmasligi uchun */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .news-content {
+            text-align: left;
+            width: 100%;
+        }
+
+        .news-title {
+            font-size: 16px;
+        }
+
+        .news-title a {
+            font-size: 18px;
+        }
+
+        .entry-meta {
+            font-size: 14px;
+        }
+
+        .d-flex.justify-content-start {
+            justify-content: center;
+        }
+    }
+
     .news-item {
         display: flex;
         align-items: center;
