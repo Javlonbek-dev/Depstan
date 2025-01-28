@@ -35,7 +35,7 @@
                     <div class="inside-article">
                         <div class="featured-image  page-header-image-single ">
 
-                                @if(false)
+                            @if(!empty($new->images) && count($new->images) > 1)
                                 <div class="image-gallery">
                                     @foreach($new->images as $image)
                                         <img fetchpriority="high"
@@ -45,13 +45,12 @@
                                              sizes="(max-width: 640px) 100vw, 640px"/>
                                     @endforeach
                                 </div>
-                                @else
-                                    <img src="{{ asset('storage/' . ($new->images[0])) }}"
-                                         alt=""
-                                         sizes="full "
-                                         style="width: 100%; max-width: 991px;"/>
-                                @endif
-
+                            @else
+                                <img src="{{ asset('storage/' . ($new->images[0] ?? 'default-image.jpg')) }}"
+                                     alt=""
+                                     sizes="full "
+                                     style="width: 100%; max-width: 991px;"/>
+                            @endif
 
                         </div>
                         <header class="entry-header">
