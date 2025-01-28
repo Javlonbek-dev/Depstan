@@ -13,6 +13,17 @@
         height: auto;
         border-radius: 8px;
     }
+    .entry-content {
+        margin-top: 0px; /* Content oldidan ortiqcha bo‘sh joyni olib tashlash */
+        padding-top: 0px;
+    }
+
+    .wp-block-embed__wrapper iframe {
+        display: block; /* Inline blok bo‘lishini oldini oladi */
+        margin: 0 auto; /* O‘rtaga joylashadi */
+        margin-bottom: 10px; /* Content bilan masofani kamaytiradi */
+    }
+
 
 </style>
 <title>{{$new->title}}. &#8212; TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
