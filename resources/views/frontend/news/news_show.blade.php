@@ -23,6 +23,14 @@
         margin: 0 auto; /* O‘rtaga joylashadi */
         margin-bottom: 10px; /* Content bilan masofani kamaytiradi */
     }
+    .image-gallery {
+        display: flex; /* Rasmlar yonma-yon joylashadi */
+        flex-wrap: wrap; /* Agar joy yetmasa, yangi qatorga tushadi */
+        justify-content: center; /* Markazlash */
+        gap: 10px; /* Rasmlar orasida masofa */
+        margin-bottom: 20px; /* Content bilan orasidagi masofani kamaytirish */
+    }
+
 
 
 </style>
