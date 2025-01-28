@@ -21,7 +21,7 @@ class ApprovalFileController extends Controller
             abort(404, 'File not found');
         }
 
-        return response()->download($filePath);
+        return response()->download($filePath, $file->name);
     }
 
 }

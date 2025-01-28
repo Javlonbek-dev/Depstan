@@ -5,7 +5,57 @@
 <title> TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 
 @include('partials.header')
+<style>
+    .news-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+        gap: 15px;
+    }
 
+    .news-content {
+        flex: 1;
+    }
+
+    .news-category {
+        font-size: 14px;
+        color: #888;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .news-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .news-title a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .news-title a:hover {
+        color: #007BFF;
+    }
+
+    .news-image {
+        width: 150px;
+        height: 100px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .news-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+</style>
 <body
     class="archive date wp-custom-logo wp-embed-responsive post-image-below-header post-image-aligned-center sticky-menu-fade mobile-header mobile-header-logo mobile-header-sticky right-sidebar nav-below-header one-container fluid-header active-footer-widgets-3 nav-search-enabled nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-kit-12">
 <a class="screen-reader-text skip-link" href="#content" title="Перейти к содержимому">Перейти к содержимому</a>
@@ -32,36 +82,39 @@
 
                 </header>
                 @foreach($news as $new)
-                    <article id="post-2719"
-                             class="post-2719 post type-post status-publish format-standard has-post-thumbnail hentry category-yangiliklar no-featured-image-padding">
-                        <div class="inside-article">
-                            <header class="entry-header">
-                                <h2 class="entry-title" itemprop="headline"><a
-                                        href="{{route('news_show', $new->id)}}"
-                                        rel="bookmark">{{$new->title}}</a></h2>
-                                <div class="entry-meta">
-                                <span class="posted-on"><time class="entry-date published"
-                                                              itemprop="datePublished">{{Carbon\Carbon::parse($new->published_at)->format('d.m.Y') }}</time></span>
-                                </div>
-                            </header>
-                            <div class="post-image">
-{{--                                @if(!$new->images==null)--}}
-{{--                                    <a href="{{route('news_show', $new->id)}}">--}}
-{{--                                        <img width="full" height="300"--}}
-{{--                                             src="{{asset('storage/'. $new->images)}}"--}}
-{{--                                             class="attachment-full size-full wp-post-image" alt="" itemprop="image"--}}
-{{--                                             decoding="async"/>--}}
-{{--                                    </a>--}}
-{{--                                @else--}}
-{{--                                    <p></p>--}}
-{{--                                @endif--}}
+                    <article class="news-item">
+                        <div class="news-content">
+                            <div class="news-category">{{$new->category ?? 'Yangiliklar'}}</div>
+                            <h2 class="news-title">
+                                <a href="{{ route('news_show', $new->id) }}">{{$new->title}}</a>
+                            </h2>
+                            <div class="entry-meta">
+                <span class="posted-on">
+                    <time class="entry-date published" itemprop="datePublished">
+                        {{ Carbon\Carbon::parse($new->published_at)->format('d.m.Y') }}
+                    </time>
+                </span>
                             </div>
-                            <p>{{\Illuminate\Support\Str::words(strip_tags($new->content),30)}} <a href="{{route('news_show', $new->id)}}"> Read more..</a></p>
-                            <div class="entry-summary" itemprop="text">
-                            </div>
+                            <p>{{ \Illuminate\Support\Str::words(html_entity_decode(strip_tags($new->content)), 100) }}
+                                <a href="{{ route('news_show', $new->id) }}"> Batafsil...</a>
+                            </p>
+
+                        </div>
+
+                        <div class="news-image">
+                            @php
+                                $images = is_array($new->images) ? $new->images : json_decode($new->images, true);
+                            @endphp
+                            @if(!empty($images) && is_array($images))
+                                <a href="{{ route('news_show', $new->id) }}">
+                                    <img src="{{ asset('storage/' . $images[0]) }}" alt="News Image">
+                                </a>
+                            @endif
                         </div>
                     </article>
                 @endforeach
+
+
                 <div class="d-flex justify-content-start">
                     {{ $news->onEachSide(1)->links() }}
                 </div>
