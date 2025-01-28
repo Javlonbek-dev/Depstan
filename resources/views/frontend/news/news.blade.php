@@ -95,7 +95,7 @@
                     </time>
                 </span>
                             </div>
-                            <p>{{ \Illuminate\Support\Str::words(html_entity_decode(strip_tags($new->content)), 100) }}
+                            <p>{{ \Illuminate\Support\Str::words(html_entity_decode(strip_tags($new->content)), 30) }}
                                 <a href="{{ route('news_show', $new->id) }}"> Batafsil...</a>
                             </p>
 
