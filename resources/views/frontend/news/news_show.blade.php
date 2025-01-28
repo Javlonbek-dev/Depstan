@@ -23,13 +23,6 @@
         margin: 0 auto; /* O‘rtaga joylashadi */
         margin-bottom: 10px; /* Content bilan masofani kamaytiradi */
     }
-    .image-gallery {
-        display: flex; /* Rasmlar yonma-yon joylashadi */
-        flex-wrap: wrap; /* Agar joy yetmasa, yangi qatorga tushadi */
-        justify-content: center; /* Markazlash */
-        gap: 10px; /* Rasmlar orasida masofa */
-        margin-bottom: 20px; /* Content bilan orasidagi masofani kamaytirish */
-    }
 
 
 
@@ -84,18 +77,21 @@
                         </header>
 
                         <div class="entry-content" itemprop="text">
-                            <figure
-                                class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-                                <div class="wp-block-embed__wrapper">
-                                    @php
-                                        $embedLink = str_replace('youtu.be/', 'www.youtube.com/embed/', $new->link);
-                                    @endphp
-                                    <iframe style="border-radius: 10px" title="{{$new->content}}" width="991"
-                                            height="557" src="{{ $embedLink }}"></iframe>
-                                </div>
-                            </figure>
+                            @if(!empty($new->link))
+                                <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+                                    <div class="wp-block-embed__wrapper">
+                                        @php
+                                            $embedLink = str_replace('youtu.be/', 'www.youtube.com/embed/', $new->link);
+                                        @endphp
+                                        <iframe style="border-radius: 10px" title="{{$new->content}}" width="991"
+                                                height="557" src="{{ $embedLink }}"></iframe>
+                                    </div>
+                                </figure>
+                            @endif
+
                             <p>{!! str_replace('http://localhost', config('app.url'), $new->content) !!}</p>
                         </div>
+
                         <div class="entry-meta">
                             <span class="posted-on"><time style="font-size: 15px" class="entry-date published"
                                                           itemprop="datePublished">{{Carbon\Carbon::parse($new->published_at)->format('d.m.Y') }}</time>
