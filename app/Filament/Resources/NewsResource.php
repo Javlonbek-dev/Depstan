@@ -27,7 +27,8 @@ class NewsResource extends Resource
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('images')
                     ->multiple()
-                    ->label('Rasmlar'),
+                    ->label('Rasmlar')
+                ->maxSize(200000),
                 Forms\Components\TextInput::make('link')->label('Havola'),
                 Forms\Components\DatePicker::make('published_at')->label("Nashr etilgan sanasi")
                     ->required(),
