@@ -20,7 +20,7 @@
                     <div class="inside-article">
 
                         <header class="entry-header">
-                            <h1 class="entry-title" itemprop="headline">Аманов Зоир Гуломович</h1></header>
+                            <h1 class="entry-title" itemprop="headline">{{$manager->full_name}}</h1></header>
 
 
                         <div class="entry-content" itemprop="text">
