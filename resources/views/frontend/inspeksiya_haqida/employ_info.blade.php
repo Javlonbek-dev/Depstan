@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-<title>Аманов Зоир Гуломович &#8212; TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
+<title>TEXNIK JIHATDAN TARTIBGA SOLISH SOHASIDA NAZORAT INSPEKSIYASI</title>
 @include('partials.header')
 
 <body
