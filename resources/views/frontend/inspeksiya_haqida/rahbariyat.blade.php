@@ -19,7 +19,7 @@
                 <article id="post-192" class="post-192 page type-page status-publish" itemtype="https://schema.org/CreativeWork" itemscope>
                     <div class="inside-article">
                         <header class="entry-header">
-                            <h1 class="entry-title" itemprop="headline">Раҳбарият</h1>
+                            <h1 class="entry-title" itemprop="headline">Raxbariyat</h1>
                         </header>
                         <div class="entry-content" itemprop="text">
                             <div data-elementor-type="wp-page" data-elementor-id="192" class="elementor elementor-192">
@@ -29,9 +29,9 @@
                                     <div>
                                         <p><strong>{{$manager->position}}</strong></p>
                                         <p><strong><strong>{{$manager->full_name}}</strong></strong></p>
-                                        <a href="{{route('employee_info',$manager->id)}}"><p>Биографияси;</p></a>
-                                        <p>Телефон: {{$manager->phone}}(1800)</p>
-                                        <p>Қабул кунлари: {{$manager->reception_days}}</p>
+                                        <a href="{{route('employee_info',$manager->id)}}"><p>Biografiya</p></a>
+                                        <p>Telefon: {{$manager->phone}}(1800)</p>
+                                        <p>Qabul kunlari: {{$manager->reception_days}}</p>
                                     </div>
                                 </section>
                                 @endforeach
