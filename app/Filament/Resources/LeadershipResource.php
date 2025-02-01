@@ -67,8 +67,6 @@ class LeadershipResource extends Resource
                             ->label('mehnat faoliyati lavozimlari')
                             ->required(),
                     ])
-                    ->minItems(1)
-                    ->maxItems(10)
                     ->columns(2)
                     ->required()
                     ->label('Mehnat faoliyati'),

@@ -30,12 +30,12 @@
                                     <img src="{{ asset('storage/' . $manager->image) }}"  alt="" style="height: 200px;"/>
                                 </figure>
                             </div>
-                            <p>{{$manager->birth_date}} Жиззах вилояти Зафаробод туманида туғилган.</p>
+                            <p>{{$manager->birth_date_place}}</p>
                             <p>Миллати-{{$manager->nationality}}</p>
                             <p>{{$manager->info}}</p>
-                            <p>Партиявийлиги: O’zLiDeP аъзоси</p>
+                            <p>Partiyaviyligi: {{$manager->partisanship}}</p>
                             <hr style="" class="wp-block-separator"/>
-                            <p style="text-align: center; "><strong>Меҳнат фаолияти:</strong></p>
+                            <p style="text-align: center; "><strong>Mehnat faoliyati:</strong></p>
                             <figure class="wp-block-table">
                                 <table class="has-fixed-layout">
                                     <tbody>
