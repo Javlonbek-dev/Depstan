@@ -37,7 +37,7 @@
                         <div class="entry-content" itemprop="text">
                             <p>{!! str_replace('http://localhost', config('app.url'), $analytic->text) !!}
                             </p>
-                            <p class="has-text-align-right"><strong>Polvon Sharipov, bosh mutaxassis</strong></p>
+                            <p class="has-text-align-right"><strong></strong></p>
                         </div>
 
 

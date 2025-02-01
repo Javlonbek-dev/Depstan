@@ -21,7 +21,7 @@
                     <div class="inside-article">
 
                         <header class="entry-header">
-                            <h1 class="entry-title" itemprop="headline">Юқори турувчи орган</h1>
+                            <h1 class="entry-title" itemprop="headline">Yuqori turuvchi organ</h1>
                         </header>
                         <div class="entry-content" itemprop="text">
                             @foreach($higherOrgan as $organ)
