@@ -47,7 +47,7 @@
                                     @endforeach
                                     </tbody>
                                 </table>
-                                <figcaption>{{$manager->full_name}} {{$manager->family_info}}</figcaption>
+                                <figcaption> {{$manager->family_info}}</figcaption>
                             </figure>
                             <p></p>
                         </div>
