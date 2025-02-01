@@ -31,7 +31,7 @@
                                 </figure>
                             </div>
                             <p>{{$manager->birth_date_place}}</p>
-                            <p>Миллати-{{$manager->nationality}}</p>
+                            <p>Millati-{{$manager->nationality}}</p>
                             <p>{{$manager->info}}</p>
                             <p>Partiyaviyligi: {{$manager->partisanship}}</p>
                             <hr style="" class="wp-block-separator"/>
